@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Web hero (SafeMe)" description="Home hero 1:1 with safeme-site: eyebrow, red-accent H1, subtitle, store badges + trial note, trust line, phone mockup with halo." -->
+<helmet>
+<script src="./ds-base.js"></script>
+<style>body{margin:0;background:#F6F7FB}</style>
+</helmet>
+<div style="max-width:1120px;margin:0 auto;padding:48px 16px;box-sizing:border-box">
+<section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px;align-items:center;padding:64px 24px;border-radius:24px;background:linear-gradient(160deg,#232A82 0%,#0E1353 55%,#080B22 100%);color:#FFFFFF;box-shadow:0 16px 40px rgba(14,19,83,0.14)">
+<div style="max-width:720px">
+<span style="display:inline-flex;text-transform:uppercase;letter-spacing:0.08em;color:#5BADFF;font-family:Inter,sans-serif;font-weight:600;font-size:0.875rem;margin-bottom:16px">Asystent Bezpieczeństwa 24/7</span>
+<h1 style="margin:0;font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(2.25rem,4vw,3.5rem);line-height:1.08;letter-spacing:-0.02em;color:#FFFFFF"><span style="color:#FF1616">Prawdziwa osoba</span> czuwa nad Twoją drogą do domu.</h1>
+<p style="margin:16px 0 0;font-family:Inter,sans-serif;font-size:1.125rem;line-height:1.65;color:rgba(255,255,255,0.85)">Powiedz aplikacji, dokąd idziesz. Przeszkolony Asystent Bezpieczeństwa na żywo śledzi Twoją trasę, we dnie i w nocy. Gdy coś wygląda podejrzanie, kontaktuje się z Tobą. Jeśli nie odpowiesz, wysyła pomoc na Twoją lokalizację.</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:24px">
+<x-import component-from-global-scope="SafeMeDesignSystem_c9bbeb.StoreBadges" tone="dark" lang="pl" app-store-url="https://apps.apple.com/pl/app/safeme/id6451586056" google-play-url="https://play.google.com/store/apps/details?id=pl.safeme.client" hint-size="340px,56px"></x-import>
+<p style="margin:0;font-family:Inter,sans-serif;font-size:0.875rem;font-style:italic;color:rgba(255,255,255,0.65)">Testuj 7 dni za darmo.</p>
+</div>
+<x-import component-from-global-scope="SafeMeDesignSystem_c9bbeb.HeroTrust" dc-props="{{ trustProps }}" hint-size="100%,24px" style="margin-top:16px"></x-import>
+</div>
+<div style="display:flex;justify-content:center">
+<x-import component-from-global-scope="SafeMeDesignSystem_c9bbeb.MockupHalo" hint-size="300px,620px" style="max-width:300px;width:100%"><img src="../../assets/mockups/PL-iphone-mockup-home.png" alt="Ekran główny aplikacji SafeMe z przyciskami Pomoc i Obserwacja" style="position:relative;z-index:1;width:100%;height:auto;display:block;filter:drop-shadow(0 24px 40px rgba(14,19,83,0.28))"></x-import>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      trustProps: { items: ['Człowiek, nie bot', 'Dostępność 24/7', 'Koncesjonowana agencja ochrony'] },
+    };
+  }
+}
+</script>
+</body>
+</html>

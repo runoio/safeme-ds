@@ -1,0 +1,32 @@
+<!-- @dsCard group="Sections" viewport="1100x1250" name="About: steps, use cases" subtitle="UK /about — HowItWorksSteps, UseCaseList" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:40px;background:var(--surface-page);font-family:var(--font-body)}.stack{display:flex;flex-direction:column;gap:40px}.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const DS = window.SafeMeDesignSystem_c9bbeb;
+function Demo(){
+  const { SectionHeader, HowItWorksSteps, UseCaseList } = DS;
+  return (<div className="stack">
+    <SectionHeader title="Step by step" />
+    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(320px,1fr))',gap:48}}>
+      <HowItWorksSteps variant="timeline" tone="safe" title="Observation" steps={[{title:'Set your route',body:'Enter your starting point, destination and mode of transport (on foot, taxi, bike, public transport), then turn on Observation with one tap.'},{title:'Your Safety Assistant watches over you',body:'Your Safety Assistant continuously checks that you are following the planned route, for the whole journey.'},{title:'Live updates',body:'You get push notifications, e.g. "We\'re still watching your journey, call for help if you feel unsafe".'},{title:'Response to any deviation',body:'If your Safety Assistant detects a deviation from your route that could signal danger, they immediately direct the appropriate services to you.'}]} />
+      <HowItWorksSteps variant="timeline" tone="danger" title="Call for Help" steps={[{title:'Report a threat',body:'With one discreet button you report that you feel unsafe, no need to talk or explain the situation.'},{title:'Contact from your Assistant',body:'Your Safety Assistant attempts to reach you by phone to assess what is happening.'},{title:'Situation assessment',body:'Based on the call, or the lack of a response, the Assistant decides what kind of help you need and how to act.'},{title:'Handover to services',body:'If you do not answer, or the situation calls for it, the Assistant passes on the report along with your location to the appropriate services.'}]} />
+    </div>
+    <SectionHeader title="When to use the app" subtitle="Whenever you feel your safety may be at risk." />
+    <UseCaseList groups={[{title:'On the move',items:['Taxi and ride-hailing journeys','Travelling by public transport','Coming home after dark','Outdoor activities such as running']},{title:'People and moments',items:['Meeting people you met online','Coming back from parties and events','Children travelling on their own','Elderly people who need support']},{title:'Needs extra care',tone:'danger',items:['People with medical conditions','Emergencies and moments when you feel unsafe']}]} />
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

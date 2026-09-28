@@ -1,0 +1,95 @@
+:root {
+  /* ---- Brand primitives (the four spec colors) ---- */
+  --safeme-red: #FF1616;        /* brand red — logo mark, hero H1 accent */
+  --safeme-red-action: #ED3745; /* action red — SOS / emergency only */
+  --safeme-blue-dark: #0E1353;  /* dark blue — primary text, dark surfaces, headers */
+  --safeme-blue-action: #5BADFF;/* action blue — safe/informational actions, links */
+
+  /* Tints & shades derived from the brand hues (base values alias the primitives
+     so the four spec colors stay the single source of truth). */
+  --red-700: #C50E0E;
+  --red-600: #E01212;
+  --red-500: var(--safeme-red);
+  --red-300: #FF4A55;           /* lighter red — SOS button gradient highlight */
+  --red-100: #FFE0E0;
+  --red-50:  #FFF2F2;
+
+  --action-red-700: #A81E29;
+  --action-red-600: #D42533;
+  --action-red-500: var(--safeme-red-action);
+  --action-red-100: #FBD9DC;
+
+  --blue-900: #080B36;
+  --blue-800: var(--safeme-blue-dark);
+  --blue-700: #1B2170;
+  --blue-500: #3A45B5;
+  --blue-action-700: #006DDB;   /* AA blue: white text on it = 4.9:1; links, filled blue CTAs */
+  --blue-action-600: #3D93F0;   /* fills/gradients only, never text on white */
+  --blue-action-500: var(--safeme-blue-action);
+  --blue-action-300: #7CC0FF;   /* lighter blue — observe button gradient highlight */
+  --blue-action-100: #DCEDFF;
+  --blue-action-50:  #EFF7FF;
+
+  /* ---- Neutrals (cool grey, tuned to the dark-blue) ---- */
+  --neutral-0:   #FFFFFF;
+  --neutral-50:  #F6F7FB;
+  --neutral-100: #ECEEF5;
+  --neutral-200: #DDE0EC;
+  --neutral-300: #C3C7DA;
+  --neutral-400: #9AA0BC;
+  --neutral-500: #6E7492;
+  --neutral-600: #4C5270;
+  --neutral-700: #333853;
+  --neutral-800: #1E2340;
+  --neutral-900: var(--safeme-blue-dark);
+
+  /* ---- Semantic aliases ---- */
+  --text-strong:   var(--blue-800);
+  --text-body:     var(--neutral-700);
+  --text-muted:    var(--neutral-500);
+  --text-inverse:  var(--neutral-0);
+  --text-link:     var(--blue-action-700);
+
+  --surface-page:   var(--neutral-50);
+  --surface-card:   var(--neutral-0);
+  --surface-raised: var(--neutral-0);
+  --surface-dark:   var(--blue-800);
+  --surface-sunken: var(--neutral-100);
+
+  --border-subtle:  var(--neutral-200);
+  --border-default: var(--neutral-300);
+  --border-strong:  var(--neutral-400);
+
+  --accent-brand:   var(--safeme-red);
+  --accent-danger:  var(--action-red-500);
+  --accent-safe:    var(--blue-action-500);
+
+  --focus-ring: color-mix(in srgb, var(--blue-action-500) 55%, transparent);
+
+  --success: #1F9D57;
+  --success-700: #14683A;
+  --success-100: #DCF3E6;
+  --warning: #E8A317;
+  --warning-700: #8A5D00;        /* readable warning text on --warning-100 */
+  --warning-100: #FBEFD2;
+
+  /* ---- Mobile app theme (the product app UI is dark / near-black).
+     The design system's PRIMARY / web theme is light — see --surface-* above. ---- */
+  --app-bg: #0A0A0C;            /* app screen background */
+  --app-surface: #1B1C20;       /* app cards, tab bar */
+  --app-surface-2: #26272C;     /* raised / pressed surfaces */
+  --app-border: #2E2F35;
+  --app-text: #FFFFFF;
+  --app-text-muted: #9A9DA6;
+  --app-online: #33D06F;        /* assistant online dot */
+
+  /* ---- Brand gradients (blue → dark) ---- */
+  /* Hero / CTA panel: soft indigo fading to dark. */
+  --gradient-hero: linear-gradient(160deg, #232A82 0%, #0E1353 55%, #080B22 100%); /* @kind color */
+  /* Vertical night: strong top-to-bottom fade into black. */
+  --gradient-deep: linear-gradient(180deg, #1B2170 0%, #0E1353 50%, #000 100%); /* @kind color */
+  /* Radial spotlight glow, e.g. behind a phone mockup on dark. */
+  --gradient-spotlight: radial-gradient(circle at 50% 30%, #2A3299 0%, #0E1353 45%, #05060F 100%); /* @kind color */
+  /* Electric edge: vivid action-blue corner into deep dark. */
+  --gradient-band: linear-gradient(120deg, #3A45B5 0%, #141A5C 55%, #05060F 100%); /* @kind color */
+}

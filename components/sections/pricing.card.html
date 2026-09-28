@@ -1,0 +1,38 @@
+<!-- @dsCard group="Sections" viewport="1100x860" name="Pakiety" subtitle="Billing toggle, plan cards, carrier billing" -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:40px;background:var(--surface-page);font-family:var(--font-body)}.stack{display:flex;flex-direction:column;gap:40px}.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const DS = window.SafeMeDesignSystem_c9bbeb;
+function Demo(){
+  const { SectionHeader, BillingToggle, PricingCard, CarrierBilling } = DS;
+  const [b, setB] = React.useState('m');
+  const f = ['Nielimitowane Obserwacje tras','Nielimitowane wezwania Pomocy','Asystent Bezpieczeństwa 24/7','7 dni za darmo'];
+  const y = b === 'y';
+  return (<div className="stack">
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:24}}>
+      <SectionHeader title="Pakiety" align="center" />
+      <BillingToggle value={b} onChange={setB} options={[{value:'m',label:'Miesięcznie'},{value:'y',label:'Rocznie — 2 miesiące gratis'}]} />
+    </div>
+    <div className="grid3" style={{alignItems:'start',paddingTop:24}}>
+      <PricingCard name="Personal" people="1 osoba" price={y?'199,90 zł':'19,99 zł'} period={y?'rok':'mies.'} perPerson="19,99 zł za osobę" features={f} ctaLabel="Wybieram Personal" />
+      <PricingCard popular name="Family" people="3 osoby" price={y?'539,70 zł':'53,97 zł'} period={y?'rok':'mies.'} perPerson="17,99 zł za osobę" features={f} ctaLabel="Wybieram Family" />
+      <PricingCard name="Family+" people="5 osób" price={y?'899,50 zł':'89,95 zł'} period={y?'rok':'mies.'} perPerson="17,99 zł za osobę" features={f} ctaLabel="Wybieram Family+" />
+    </div>
+    <CarrierBilling body="Subskrypcję możesz opłacać wygodnie razem z rachunkiem u swojego operatora: Play, Plus, T-Mobile lub Orange." carriers={[{name:'Play',logo:'../../assets/operators/play.png'},{name:'Plus',logo:'../../assets/operators/plus.png'},{name:'T-Mobile',logo:'../../assets/operators/tmobile.png'},{name:'Orange',logo:'../../assets/operators/orange.png'}]} />
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

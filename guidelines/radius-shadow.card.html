@@ -1,0 +1,21 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Radius & shadow" subtitle="Corner radii and elevation" -->
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin:0; padding:22px; background:var(--surface-page); font-family:var(--font-body); }
+  .row { display:flex; gap:20px; align-items:flex-end; }
+  .box { width:96px; height:70px; background:var(--surface-card); border:1px solid var(--border-subtle); display:flex; align-items:flex-end; justify-content:center; }
+  .cap { font-size:11px; color:var(--text-muted); font-weight:600; padding-bottom:6px; }
+  .sep { width:1px; align-self:stretch; background:var(--border-subtle); margin:0 4px; }
+</style></head><body>
+<div class="row">
+  <div class="box" style="border-radius:var(--radius-sm)"><span class="cap">sm 6</span></div>
+  <div class="box" style="border-radius:var(--radius-md)"><span class="cap">md 10</span></div>
+  <div class="box" style="border-radius:var(--radius-lg)"><span class="cap">lg 16</span></div>
+  <div class="box" style="border-radius:var(--radius-pill);width:120px"><span class="cap">pill</span></div>
+  <div class="sep"></div>
+  <div class="box" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);border:none"><span class="cap">shadow-sm</span></div>
+  <div class="box" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-md);border:none"><span class="cap">shadow-md</span></div>
+  <div class="box" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);border:none"><span class="cap">shadow-lg</span></div>
+</div>
+</body></html>

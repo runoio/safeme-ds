@@ -1,0 +1,37 @@
+<!-- @dsCard group="Sections" viewport="1100x1100" name="Jak to działa + Asystent" subtitle="Steps, video, assistant photo + stats" -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:40px;background:var(--surface-page);font-family:var(--font-body)}.stack{display:flex;flex-direction:column;gap:40px}.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const DS = window.SafeMeDesignSystem_c9bbeb;
+function Demo(){
+  const { SectionHeader, HowItWorksSteps, VideoCard, AssistantSection } = DS;
+  return (<div className="stack">
+    <div style={{display:'grid',gridTemplateColumns:'minmax(0,1fr) minmax(260px,320px)',gap:40,alignItems:'center'}}>
+      <div>
+        <SectionHeader eyebrow="Jak to działa" title="Trzy kroki. Jedna osoba czuwa nad Tobą." subtitle="Obejrzyj w 30 sekund albo przeczytaj kroki poniżej." />
+        <HowItWorksSteps steps={[
+          {title:'Ustaw trasę',body:'Powiedz, dokąd idziesz i czym: pieszo, taksówką, autobusem, pociągiem czy rowerem. Potem włącz Obserwację.'},
+          {title:'Asystent Bezpieczeństwa czuwa nad trasą',body:'Przeszkolona osoba na żywo śledzi Twoją podróż, od wyjścia aż do dotarcia na miejsce.'},
+          {title:'Gdy coś jest nie tak, reaguje',body:'Najpierw dzwoni albo pisze. Jeśli nie odpowiesz albo potrzebujesz pomocy, kieruje służby do Twojej lokalizacji.'}]} />
+        <a href="#" style={{display:'inline-flex',marginTop:24,color:'var(--text-strong)',fontWeight:600,textDecoration:'underline',textUnderlineOffset:3}}>Zobacz pełny krok po kroku</a>
+      </div>
+      <VideoCard videoId="t2u1c61gDxI" caption="Jak to działa · 30 sekund" />
+    </div>
+    <AssistantSection image="../../assets/photos/security-assistant.jpg" imageAlt="Asystent Bezpieczeństwa SafeMe na słuchawkach" title="Kim jest Asystent Bezpieczeństwa" body="Asystenci Bezpieczeństwa to wykwalifikowani pracownicy ochrony i monitorowania sygnałów alarmowych, przeszkoleni w obsłudze sytuacji kryzysowych, pracy pod presją oraz wspieraniu użytkowników w chwilach najwyższego stresu. To Twoje wsparcie 24 godziny na dobę, 7 dni w tygodniu." stats={[{value:'30 sekund',label:'Średni czas do pierwszego kontaktu od zgłoszenia'},{value:'24/7',label:'Czuwamy całą dobę, każdego dnia tygodnia'},{value:'Człowiek, nie bot',label:'Rozmawiasz z realnym, przeszkolonym konsultantem'}]} />
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

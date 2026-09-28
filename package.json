@@ -1,0 +1,30 @@
+{
+  "name": "safeme-design-system",
+  "version": "1.0.0",
+  "description": "SafeMe design system — brand tokens, typography, logo and React UI components.",
+  "license": "UNLICENSED",
+  "private": false,
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "styles.css",
+    "tokens",
+    "components",
+    "assets",
+    "guidelines",
+    "readme.md",
+    "SKILL.md"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./styles.css": "./styles.css",
+    "./tokens/*": "./tokens/*",
+    "./assets/*": "./assets/*",
+    "./components/*": "./components/*"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}

@@ -1,0 +1,36 @@
+<!-- @dsCard group="Colors" viewport="1200x760" name="Gradient options" subtitle="Pick your favourite blue → dark direction" -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin:0; padding:32px; background:#EEF0F6; font-family:var(--font-body); }
+  h1 { font-family:var(--font-head); font-weight:800; font-size:22px; color:var(--blue-800); margin:0 0 4px; }
+  .sub { font-size:14px; color:var(--text-muted); margin:0 0 24px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .card { border-radius:var(--radius-xl); overflow:hidden; box-shadow:var(--shadow-md); }
+  .panel { height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; position:relative; }
+  .panel h2 { font-family:var(--font-head); font-weight:700; font-size:17px; color:#fff; margin:0; text-align:center; line-height:1.3; }
+  .btn { background:#0B0C10; color:#fff; border:none; border-radius:var(--radius-pill); padding:9px 20px; font-family:var(--font-head); font-weight:600; font-size:13px; }
+  .meta { background:#fff; padding:11px 14px; }
+  .name { font-family:var(--font-head); font-weight:700; font-size:13px; color:var(--blue-800); }
+  .code { font-family:ui-monospace,monospace; font-size:11px; color:var(--text-muted); margin-top:3px; word-break:break-all; }
+
+  .v1 { background:linear-gradient(160deg,#232A82 0%,#0E1353 55%,#080B22 100%); }
+  .v2 { background:linear-gradient(180deg,#1B2170 0%,#0E1353 50%,#000 100%); }
+  .v3 { background:radial-gradient(circle at 50% 30%,#2A3299 0%,#0E1353 45%,#05060F 100%); }
+  .v4 { background:linear-gradient(120deg,#3A45B5 0%,#141A5C 55%,#05060F 100%); }
+</style>
+</head>
+<body>
+<h1>Brand gradients — blue → dark</h1>
+<p class="sub">Wybrane cztery kierunki, zapisane jako tokeny SafeMe.</p>
+<div class="grid">
+  <div class="card"><div class="panel v1"><h2>Hero — soft indigo</h2><button class="btn">Pobierz aplikację</button></div><div class="meta"><div class="name">--gradient-hero</div><div class="code">160deg · #232A82 → #0E1353 → #080B22</div></div></div>
+  <div class="card"><div class="panel v2"><h2>Deep — vertical night</h2><button class="btn">Pobierz aplikację</button></div><div class="meta"><div class="name">--gradient-deep</div><div class="code">180deg · #1B2170 → #0E1353 → #000</div></div></div>
+  <div class="card"><div class="panel v3"><h2>Spotlight — radial</h2><button class="btn">Pobierz aplikację</button></div><div class="meta"><div class="name">--gradient-spotlight</div><div class="code">radial 50% 30% · #2A3299 → #0E1353 → #05060F</div></div></div>
+  <div class="card"><div class="panel v4"><h2>Band — electric edge</h2><button class="btn">Pobierz aplikację</button></div><div class="meta"><div class="name">--gradient-band</div><div class="code">120deg · #3A45B5 → #141A5C → #05060F</div></div></div>
+</div>
+</body>
+</html>

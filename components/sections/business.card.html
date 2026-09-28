@@ -1,0 +1,39 @@
+<!-- @dsCard group="Sections" viewport="1100x1250" name="For business: tiers, platforms, awards, contact" subtitle="UK /offer — TierPriceCard, LogoStrip, AwardCard, ContactPersonCTA" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:40px;background:var(--surface-page);font-family:var(--font-body)}.stack{display:flex;flex-direction:column;gap:40px}.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const DS = window.SafeMeDesignSystem_c9bbeb;
+function Demo(){
+  const { SectionHeader, TierPriceCard, LogoStrip, AwardCard, ContactPersonCTA } = DS;
+  return (<div className="stack">
+    <SectionHeader title="Pricing" subtitle="A simple subscription model: a fixed monthly fee for every employee covered, billed by invoice." />
+    <div className="grid3" style={{paddingTop:16}}>
+      <TierPriceCard tier="100+" price="£6.39" unit="/ user" note="retail price: £7.99" />
+      <TierPriceCard highlight badge="Best value" tier="200+" price="£5.59" unit="/ user" note="save 30% vs the retail price" />
+      <TierPriceCard tier="300+" price="custom offer" note="we will prepare a quote tailored to your scale" />
+    </div>
+    <LogoStrip title="Available in benefit cafeteria platforms" body="Already using a cafeteria platform? You will find the app in:" logos={[{name:'Pluxee',src:'../../assets/partners/pluxee.svg'},{name:'Motivizer',src:'../../assets/partners/motivizer.svg'},{name:'Worksmile',src:'../../assets/partners/worksmile.svg'},{name:'Nais',src:'../../assets/partners/nais.svg'}]} />
+    <SectionHeader title="Awards and recognition" subtitle="The quality of our services is confirmed by independent awards." />
+    <div className="grid3">
+      <AwardCard logo="../../assets/awards/innovation-of-the-year.png" title="Innovation of the Year 2025" body="Gold in the Service category and the main prize for Innovation of the Year." />
+      <AwardCard logo="../../assets/awards/orzel-innowacji-logo.png" title="Orzeł Innowacji 2025" body="An award for the most innovative solutions on the Polish market." />
+      <AwardCard logo="../../assets/awards/mobile-trends-awards.png" title="Mobile Trends Awards" body={'Main prize in the "Mobile for safety" category.'} />
+    </div>
+    <ContactPersonCTA title="See how it works in practice. Book a free online demo: in 30 minutes we will show you the app from the employee side and the admin panel, walk you through onboarding and prepare a quote for your team." photo="../../assets/photos/karol-bedynski.jpg" name="Karol Bedyński" role="Head of Partnerships, co-founder of SafeMe" href="https://calendly.com/karolbedynski_safeme/safeme-asystent-bezpieczenstwa-24-7-prezentacja" />
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

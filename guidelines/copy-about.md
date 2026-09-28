@@ -1,0 +1,259 @@
+# Copy — O aplikacji / About (verbatim)
+
+Extracted from `trupek123/safeme-site` main, `lib/i18n.ts` (28.09.2026). **Quote verbatim.** Section order matches the page (see `home-sections.md`). Omitted: meta, image paths, icons, prices (see `content-and-facts.md`).
+
+## PL — /o-aplikacji
+
+  - **title:** O aplikacji SafeMe – Asystent Bezpieczeństwa 24/7
+  - **description:** SafeMe to aplikacja stworzona przez koncesjonowaną agencję ochrony. Jednym kliknięciem zamówisz Obserwację trasy lub wezwiesz Pomoc – wsparcie 24/7 w Polsce i Wielkiej Brytanii.
+- **hero**
+  - **title:** Aplikacja SafeMe
+  - **titleAccent:** SafeMe
+  - **trust:** Dostępność 24/7 · Polska i UK · Koncesjonowana agencja ochrony
+  - **subtitle:** Całodobowe wsparcie Asystentów Bezpieczeństwa w Twoim telefonie. Jednym kliknięciem zamówisz Obserwację trasy lub wezwiesz Pomoc.
+  - **ctaLabel:** Pobierz aplikację
+  - **note:** Testuj 7 dni za darmo.
+- **sections**
+    - **title:** Dlaczego SafeMe, a nie 112?
+    - **text:** Między poczuciem zagrożenia a momentem, w którym można wezwać służby, istnieje luka - tzw. safety gap. Gdy czujesz się niepewnie, ale nic jeszcze się nie stało, numer alarmowy Ci nie pomoże, bo nie ma podstaw do interwencji. Tę lukę wypełnia Asystent Bezpieczeństwa - wspiera Cię już wtedy, gdy pojawia się niepokój. /  / Asystent ma dostęp do Twojej lokalizacji i danych, dzięki czemu działa natychmiast - bez czekania na linii i oceniania zasadności zgłoszenia. Od razu proponuje rozwiązania, udziela wsparcia, a gdy trzeba, kieruje odpowiednie służby na miejsce. Działamy też prewencyjnie - reagujemy, zanim dojdzie do eskalacji zagrożenia.
+    - **video**
+      - **title:** SafeMe w akcji
+- **featuresTitle:** Co nas wyróżnia
+- **features**
+    - **title:** Gotowość operacyjna 24/7
+    - **description:** Działamy bez przerw, całą dobę, na terenie Polski i Wielkiej Brytanii.
+    - **title:** Nie obciążamy bliskich
+    - **description:** To my reagujemy, a nie rodzina czy znajomi, którzy nie wiedzą, jak zareagować. Zgłoszenie trafia do przeszkolonego pracownika ochrony.
+    - **title:** Skuteczny dostęp do służb
+    - **description:** W razie zagrożenia natychmiast kierujemy odpowiednie służby na miejsce, przekazując im komplet informacji o Tobie i Twojej lokalizacji.
+    - **title:** Stworzona przez profesjonalistów
+    - **description:** Za aplikacją stoi zespół specjalistów ochrony i monitorowania sygnałów alarmowych, a nie sam algorytm.
+    - **title:** Wypełniamy safety gap
+    - **description:** Między poczuciem zagrożenia a momentem, w którym można wezwać służby, istnieje luka. Reagujemy już wtedy, gdy pojawia się niepokój, a nie ma podstaw do wezwania służb.
+    - **title:** Bezpieczeństwo danych
+    - **description:** Dane przetwarzamy zgodnie z RODO i przechowujemy na serwerach w Unii Europejskiej. Udostępniamy je wyłącznie służbom alarmowym, tylko w ramach aktywnego zgłoszenia.
+- **howToUse**
+  - **title:** Krok po kroku
+  - **groups**
+      - **title:** Obserwacja
+      - **steps**
+          - **title:** Ustaw trasę
+          - **description:** Podajesz punkt startu, cel i sposób poruszania się (pieszo, taksówka, rower, komunikacja) i włączasz Obserwację jednym dotknięciem.
+          - **title:** Asystent czuwa nad Tobą
+          - **description:** Asystent Bezpieczeństwa na bieżąco sprawdza, czy poruszasz się wyznaczoną trasą, przez cały czas trwania przejazdu.
+          - **title:** Powiadomienia na bieżąco
+          - **description:** Dostajesz push, np. „Obserwujemy dalej Twój przejazd, w razie zagrożenia wezwij pomoc" albo „Zbliżasz się do celu, jeśli nie czujesz zagrożenia, wyłącz obserwację".
+          - **title:** Reakcja przy odchyleniu
+          - **description:** Jeśli Asystent wykryje odchylenie od trasy mogące świadczyć o zagrożeniu, od razu kieruje do Ciebie odpowiednie służby.
+      - **title:** Wezwij pomoc
+      - **steps**
+          - **title:** Zgłoś zagrożenie
+          - **description:** Jednym, dyskretnym przyciskiem zgłaszasz, że czujesz się zagrożony lub zagrożona, bez konieczności rozmowy czy tłumaczenia sytuacji.
+          - **title:** Kontakt od Asystenta
+          - **description:** Asystent Bezpieczeństwa podejmuje próbę kontaktu telefonicznego, żeby ocenić, co się dzieje.
+          - **title:** Ocena sytuacji
+          - **description:** Na podstawie rozmowy (lub jej braku) Asystent decyduje, jakiej pomocy potrzebujesz i jak się zachować.
+          - **title:** Przekazanie służbom
+          - **description:** Jeśli nie odbierasz albo sytuacja tego wymaga, Asystent przekazuje zgłoszenie wraz z Twoją lokalizacją odpowiednim służbom.
+- **assistant**
+  - **title:** Kim jest Asystent Bezpieczeństwa
+  - **text:** Asystenci Bezpieczeństwa to wykwalifikowani pracownicy ochrony i monitorowania sygnałów alarmowych, przeszkoleni w obsłudze sytuacji kryzysowych, pracy pod presją oraz wspieraniu użytkowników w chwilach najwyższego stresu. To Twoje wsparcie 24 godziny na dobę, 7 dni w tygodniu.
+  - **highlights**
+- **useCases**
+  - **title:** Kiedy korzystać z aplikacji
+  - **intro:** Zawsze wtedy, gdy czujesz, że Twoje bezpieczeństwo może być zagrożone.
+  - **video**
+    - **title:** Kiedy korzystać z SafeMe
+  - **categories**
+      - **label:** W podróży
+      - **items**
+      - **label:** Ludzie i sytuacje
+      - **items**
+      - **label:** Wymagające szczególnej troski
+      - **items**
+- **comparison**
+  - **eyebrow:** Pytanie, które pada zawsze
+  - **title:** Czemu nie wysłać po prostu lokalizacji bliskiej osobie?
+  - **subtitle:** Bo Twoja bliska osoba może akurat spać, a nawet jeśli nie śpi, nie będzie wiedziała, co dalej zrobić.
+  - **columns:** Wysyłanie lokalizacji · SafeMe
+  - **rows**
+      - **label:** Kto czuwa
+      - **other:** Bliska osoba, gdy akurat zerknie w telefon
+      - **safeme:** Przeszkolony Asystent Bezpieczeństwa, 24/7
+      - **label:** Zauważenie problemu
+      - **other:** Tylko jeśli zauważy, że kropka przestała się ruszać
+      - **safeme:** Asystent widzi, gdy zjeżdżasz z trasy albo się zatrzymujesz, i sprawdza, co się dzieje
+      - **label:** Co dalej
+      - **other:** Martwi się, dzwoni, musi decydować pod presją
+      - **safeme:** Profesjonalista ocenia sytuację i wysyła pomoc z Twoją dokładną lokalizacją
+      - **label:** Twoi bliscy
+      - **other:** Nie śpią, czekają na wiadomość
+      - **safeme:** Mogą spokojnie spać
+  - **video**
+    - **title:** Asystent bezpieczeństwa jednym dotknięciem
+- **packagesTitle:** Pakiety
+    - **name:** Personal
+    - **people:** 1 osoba
+    - **name:** Family
+    - **people:** 3 osoby
+    - **name:** Family+
+    - **people:** 5 osób
+- **packagesBadge:** Najpopularniejszy
+- **packagesPeriodLabel:** mies.
+- **packagesAnnualPeriodLabel:** rok
+- **packagesBillingToggle**
+- **packagesCtaLabel:** Wybieram
+- **packagesFeatures**
+  - Nielimitowane Obserwacje tras
+  - Nielimitowane wezwania Pomocy
+  - Asystent Bezpieczeństwa 24/7
+  - 7 dni za darmo
+- **perPersonLabel:** za osobę
+- **benefit**
+  - **eyebrow:** Dla firm
+  - **title:** Benefit pracowniczy
+  - **text:** SafeMe to pierwszy w Polsce benefit pracowniczy z kategorii security-tech. Pokaż zespołowi, że jego bezpieczeństwo jest dla Ciebie priorytetem - w pracy i poza nią.
+  - **ctaLabel:** Poznaj ofertę dla firm
+- **faqTitle:** Dobre pytania
+- **faq**
+    - **question:** Czy SafeMe zastępuje 112?
+    - **answer:** Nie. Jeśli jesteś w bezpośrednim niebezpieczeństwie, zadzwoń pod 112. SafeMe działa wcześniej – gdy czujesz się niepewnie, ale nie ma jeszcze podstaw do zgłoszenia. Jeśli sytuacja się zaostrzy, Asystent Bezpieczeństwa przekazuje Twoją lokalizację odpowiednim służbom.
+    - **question:** Kto jest po drugiej stronie?
+    - **answer:** Asystent Bezpieczeństwa – pracownik koncesjonowanej agencji ochrony, przeszkolony w obsłudze sytuacji kryzysowych. Nie bot ani infolinia, tylko konkretna osoba, która widzi Twoją lokalizację i reaguje od razu.
+    - **question:** Co się stanie, jeśli nie odpowiem?
+    - **answer:** Jeśli podczas Obserwacji trasy przestaniesz odpowiadać Asystentowi, traktujemy to jako sygnał ostrzegawczy i uruchamiamy procedurę reakcji – łącznie z wysłaniem służb na Twoją ostatnią znaną lokalizację, jeśli sytuacja tego wymaga.
+    - **question:** Czy moja rodzina też musi mieć aplikację?
+    - **answer:** Nie musi. Pakiety Family i Family+ pozwalają dodać bliskich do jednego konta, ale każda osoba korzysta z aplikacji niezależnie – zgłoszenie trafia do Asystenta Bezpieczeństwa, a nie do reszty rodziny, więc nikt nie musi czuwać przy telefonie.
+    - **question:** Ile kosztuje po okresie próbnym?
+    - **answer:** Pierwsze 7 dni są za darmo. Potem Personal to 19,99 zł miesięcznie, Family (3 osoby) 53,97 zł, a Family+ (5 osób) 89,95 zł. Przy płatności rocznej płacisz za 10 miesięcy, 2 masz gratis. Subskrypcję anulujesz w każdej chwili.
+- **finalCta**
+  - **text:** Poczuj się bezpiecznie. Pobierz aplikację i testuj przez 7 dni za darmo.
+  - **primaryLabel:** Pobierz aplikację
+
+## EN — /about
+
+  - **title:** About the SafeMe app – Safety Assistant 24/7
+  - **description:** SafeMe is an app created by a licensed security agency. With one tap you can order an Observation of your route or call for Help. Support available 24/7.
+- **hero**
+  - **title:** The SafeMe app
+  - **titleAccent:** SafeMe
+  - **trust:** Available 24/7 · Licensed security agency · A human on the other side
+  - **subtitle:** Round-the-clock support from Safety Assistants in your phone. With one tap you can order an Observation of your route or call for Help.
+  - **ctaLabel:** Download the app
+  - **note:** Try it free for 7 days.
+- **sections**
+    - **title:** Why SafeMe and not the emergency number?
+    - **text:** Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called safety gap. When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention. This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears. /  / The Assistant has access to your location and details, so they act immediately, without keeping you on the line or questioning whether your report is justified. They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. We also act preventively and react before a threat escalates.
+    - **video**
+      - **title:** SafeMe in action
+- **featuresTitle:** What makes us different
+- **features**
+    - **title:** Operational readiness 24/7
+    - **description:** We operate non-stop, around the clock, every day of the year.
+    - **title:** No burden on your loved ones
+    - **description:** It is us who react, not family or friends who may not know what to do. Every report goes to a trained security professional.
+    - **title:** Effective access to emergency services
+    - **description:** In case of danger we immediately direct the appropriate services to the scene, handing them complete information about you and your location.
+    - **title:** Created by professionals
+    - **description:** Behind the app stands a team of security and alarm-monitoring specialists, not just an algorithm.
+    - **title:** We close the safety gap
+    - **description:** There is a gap between feeling unsafe and the moment you can call the emergency services. We react as soon as unease appears, even when there are no grounds yet to call them.
+    - **title:** Data security
+    - **description:** We process data in line with GDPR and store it on servers in the European Union. We share it only with emergency services, and only as part of an active report.
+- **howToUse**
+  - **title:** Step by step
+  - **groups**
+      - **title:** Observation
+      - **steps**
+          - **title:** Set your route
+          - **description:** Enter your starting point, destination and mode of transport (on foot, taxi, bike, public transport), then turn on Observation with one tap.
+          - **title:** Your Safety Assistant watches over you
+          - **description:** Your Safety Assistant continuously checks that you are following the planned route, for the whole journey.
+          - **title:** Live updates
+          - **description:** You get push notifications, e.g. "We're still watching your journey, call for help if you feel unsafe" or "You're approaching your destination, turn off Observation if you don't feel at risk."
+          - **title:** Response to any deviation
+          - **description:** If your Safety Assistant detects a deviation from your route that could signal danger, they immediately direct the appropriate services to you.
+      - **title:** Call for Help
+      - **steps**
+          - **title:** Report a threat
+          - **description:** With one discreet button you report that you feel unsafe, no need to talk or explain the situation.
+          - **title:** Contact from your Assistant
+          - **description:** Your Safety Assistant attempts to reach you by phone to assess what is happening.
+          - **title:** Situation assessment
+          - **description:** Based on the call, or the lack of a response, the Assistant decides what kind of help you need and how to act.
+          - **title:** Handover to services
+          - **description:** If you do not answer, or the situation calls for it, the Assistant passes on the report along with your location to the appropriate services.
+- **assistant**
+  - **title:** Who is your Safety Assistant
+  - **text:** Safety Assistants are qualified security and alarm-monitoring professionals, trained to handle crisis situations, work under pressure and support users in moments of extreme stress. They are your support 24 hours a day, 7 days a week.
+  - **highlights**
+- **useCases**
+  - **title:** When to use the app
+  - **intro:** Whenever you feel your safety may be at risk.
+  - **video**
+    - **title:** When to use SafeMe
+  - **categories**
+      - **label:** On the move
+      - **items**
+      - **label:** People and moments
+      - **items**
+      - **label:** Needs extra care
+      - **items**
+- **comparison**
+  - **eyebrow:** The question everyone asks
+  - **title:** Why not just share my location with a friend?
+  - **subtitle:** Because your friend might be asleep, and even if they're not, they won't know what to do next.
+  - **columns:** Sharing your location · SafeMe
+  - **rows**
+      - **label:** Who's watching
+      - **other:** A friend, when they happen to check their phone
+      - **safeme:** A trained Safety Assistant, on duty 24/7
+      - **label:** Spotting a problem
+      - **other:** Only if they notice the dot has stopped moving
+      - **safeme:** The Assistant sees when you leave your route or stop, and checks in
+      - **label:** What happens next
+      - **other:** They worry, keep calling, and have to decide under stress
+      - **safeme:** A professional assesses the situation and sends help with your exact location
+      - **label:** Your loved ones
+      - **other:** Stay up waiting for your message
+      - **safeme:** Can go to sleep
+  - **video**
+    - **title:** One tap safety assistant
+- **packagesTitle:** Packages
+    - **name:** Personal
+    - **people:** 1 person
+    - **name:** Family
+    - **people:** 3 people
+    - **name:** Family+
+    - **people:** 5 people
+- **packagesBadge:** Most popular
+- **packagesPeriodLabel:** mo.
+- **packagesAnnualPeriodLabel:** yr
+- **packagesBillingToggle**
+- **packagesCtaLabel:** Choose
+- **packagesFeatures**
+  - Unlimited route Observations
+  - Unlimited Help calls
+  - Safety Assistant 24/7
+  - 7 days free
+- **perPersonLabel:** per person
+- **benefit**
+  - **eyebrow:** For business
+  - **title:** Employee benefit
+  - **text:** SafeMe is a first-of-its-kind employee benefit in the security-tech category. Show your team that their safety is your priority, at work and beyond.
+  - **ctaLabel:** See the offer for business
+- **faqTitle:** Good questions
+- **faq**
+    - **question:** Does SafeMe replace 999?
+    - **answer:** No. If you're in immediate danger, call 999. SafeMe is for the moments before that, when you feel unsafe but there's nothing to report yet. If a situation escalates, your Safety Assistant passes your location to the emergency services.
+    - **question:** Who is on the other end?
+    - **answer:** A Safety Assistant — a security professional from a licensed agency, trained to handle crisis situations. Not a bot or a call-centre script: a real person who can see your location and responds straight away.
+    - **question:** What happens if I don't answer?
+    - **answer:** During a route Observation, if you stop answering your Safety Assistant, we treat it as a warning sign and start our response procedure, including sending the emergency services to your last known location if the situation calls for it.
+    - **question:** Does my family need the app too?
+    - **answer:** No. Family and Family+ let you add your loved ones to one account, but everyone uses the app on their own — reports go to your Safety Assistant, not to the rest of the family, so nobody has to sit by the phone.
+    - **question:** How much does it cost after the trial?
+    - **answer:** The first 7 days are free. After that, Personal is £7.99 a month, Family (3 people) £20.97, and Family+ (5 people) £34.95. Pay annually and get 2 months free. Cancel any time.
+- **finalCta**
+  - **text:** Feel safe. Download the app and try it free for 7 days.
+  - **primaryLabel:** Download the app

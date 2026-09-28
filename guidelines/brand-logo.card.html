@@ -1,0 +1,22 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Logo & sygnet" subtitle="Lockups on light and dark; the E-chevron mark" -->
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin:0; padding:20px; background:var(--surface-page); font-family:var(--font-body); }
+  .grid { display:flex; gap:16px; align-items:stretch; }
+  .tile { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; padding:22px; border-radius:var(--radius-lg); border:1px solid var(--border-subtle); }
+  .dark { background:var(--surface-dark); border-color:var(--surface-dark); }
+  .black { background:#000; border-color:#000; }
+  .cap { font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
+  .cap.d { color:var(--text-muted); }
+  .cap.l { color:rgba(255,255,255,.6); }
+  img { display:block; }
+</style></head><body>
+<div class="grid">
+  <div class="tile"><img src="../assets/logo-black.svg" height="34" alt="SafeMe" /><span class="cap d">Wordmark · light bg</span></div>
+  <div class="tile dark"><img src="../assets/logo-white.svg" height="34" alt="SafeMe" /><span class="cap l">Wordmark · dark bg</span></div>
+  <div class="tile black"><img src="../assets/logo-white.svg" height="34" alt="SafeMe" /><span class="cap l">Wordmark · black bg</span></div>
+  <div class="tile"><img src="../assets/sygnet-red.svg" height="46" alt="SafeMe mark" /><span class="cap d">Sygnet · light</span></div>
+  <div class="tile black"><img src="../assets/sygnet-red.svg" height="46" alt="SafeMe mark" /><span class="cap l">Sygnet · black</span></div>
+</div>
+</body></html>
