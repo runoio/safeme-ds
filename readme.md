@@ -169,7 +169,6 @@ Load Lucide from CDN: `<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lu
 - `guidelines/hero-pattern.md` — the web hero pattern (anatomy, H1 accent, trust line).
 - `guidelines/mockup-halo.md` — the pulsing glow behind phone mockups.
 - `templates/web-hero/` — "Web hero (SafeMe)" starting template for consuming projects.
-- `ui_kits/app/` — SafeMe mobile app recreation (see its README).
 - Foundation specimen cards: `guidelines/*.card.html` (Type, Colors, Spacing, Brand).
 - `SKILL.md` — Agent-Skill wrapper for download/Claude Code use.
 

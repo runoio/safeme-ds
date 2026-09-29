@@ -21,4 +21,3 @@ If the user invokes this skill without any other guidance, ask them what they wa
 - **Components:** `components/core` (Button, IconButton, Input, Switch, Badge, StatusPill, Card), `components/brand` (Logo, SOSButton), `components/marketing` (HeroEyebrow, HeroTitle, HeroTrust, MockupHalo).
 - **Patterns:** `guidelines/hero-pattern.md`, `guidelines/mockup-halo.md`.
 - **Templates:** `templates/web-hero/` — ready dark hero section.
-- **UI kit:** `ui_kits/app` — mobile app screens (home, route monitoring, emergency assistant).

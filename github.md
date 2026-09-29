@@ -1,11 +1,15 @@
-repo: trupek123/safeme-site
+repo: trupek123/safeme-ds
 branch: main
-path: app/
+source: trupek123/safeme-site (app/)
 
 ## Last sync
-date: 2026-09-27T22:42:26Z
+date: 2026-09-29T11:04:35Z
 
 ### Updated in this project
+- safeme-ds@29f4d35 verified identical to this project (all 167 files match)
+
+## Sync history
+### 2026-09-27T22:42:26Z (safeme-site)
 - Verified main is current (no commits since f7d59ec6c104); code is newer than live safeme.uk — content guidelines now follow the code
 - Section components in `components/sections/` restyled 1:1 from `app/globals.css`
 - Tokens aligned: `--text-link` #006DDB, `--action-red-700`, `--success-700`

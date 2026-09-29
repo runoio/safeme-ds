@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="styles.css">
+<style>
+body{margin:0;font-family:var(--font-body);color:var(--text-body)}
+a{color:var(--text-link)}a:hover{color:var(--blue-action-600)}
+.frame{position:absolute;width:1100px;border-radius:24px;overflow:hidden;box-shadow:0 2px 12px rgba(14,19,83,.08)}
+.dark{background:var(--gradient-hero);color:#fff}
+.badge{position:absolute;top:16px;right:16px;z-index:5;background:#fff;color:var(--blue-800);font:700 14px/1 var(--font-head);padding:8px 12px;border-radius:999px}
+.pad{padding:64px}
+h2{font:800 40px/1.15 var(--font-head);margin:0;text-wrap:balance}
+p{text-wrap:pretty}
+.vid{position:relative;aspect-ratio:9/16;width:100%;border-radius:24px;overflow:hidden;background:#000 center/cover no-repeat url(https://i.ytimg.com/vi/bQXmvbEu5mg/oar2.jpg)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--safeme-red-action);display:grid;place-items:center;box-shadow:0 6px 20px rgba(237,55,69,.5)}
+.play::before{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.hl{color:var(--blue-action-300);font-weight:600}
+.lbl{font:700 12px/1.2 var(--font-head);letter-spacing:.08em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<!-- 1: lead sentence + highlighted key phrases -->
+<section class="frame dark" id="1" style="left:0;top:0">
+<span class="badge">1</span>
+<div class="pad" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;align-items:center">
+<div>
+<h2>Why SafeMe and not the emergency number?</h2>
+<p style="font:600 24px/1.4 var(--font-head);margin:28px 0 0">Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called <span style="color:var(--blue-action-300)">safety gap</span>.</p>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:28px;font-size:16px;line-height:1.6;color:rgba(255,255,255,.88)">
+<p style="margin:0">When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention. <span class="hl">This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears.</span></p>
+<p style="margin:0">The Assistant has access to your location and details, so they <span class="hl">act immediately</span>, without keeping you on the line or questioning whether your report is justified. They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. <span class="hl">We also act preventively and react before a threat escalates.</span></p>
+</div>
+</div>
+<div class="vid"><span class="play"></span></div>
+</div>
+</section>
+
+<!-- 2: safety gap diagram -->
+<section class="frame dark" id="2" style="left:1180px;top:0">
+<span class="badge">2</span>
+<div class="pad" style="display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:56px;align-items:center">
+<div>
+<h2>Why SafeMe and not the emergency number?</h2>
+<div style="margin-top:36px;display:grid;grid-template-columns:1fr 1.6fr 1fr;align-items:end;gap:0">
+<div class="lbl" style="color:rgba(255,255,255,.7);padding-bottom:10px">Feeling unsafe</div>
+<div class="lbl" style="color:var(--blue-action-300);text-align:center;padding-bottom:10px">Safety gap · Safety Assistant</div>
+<div class="lbl" style="color:rgba(255,255,255,.7);text-align:right;padding-bottom:10px">Emergency services</div>
+<span style="height:10px;border-radius:999px 0 0 999px;background:rgba(255,255,255,.25)"></span>
+<span style="height:10px;background:linear-gradient(90deg,var(--blue-action-600),var(--blue-action-300));box-shadow:0 0 24px rgba(91,173,255,.6)"></span>
+<span style="height:10px;border-radius:0 999px 999px 0;background:var(--safeme-red-action)"></span>
+</div>
+<p style="margin:32px 0 0;font-size:16px;line-height:1.6;color:rgba(255,255,255,.88)">Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called safety gap. When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention. <strong style="color:#fff">This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears.</strong></p>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:rgba(255,255,255,.88)">The Assistant has access to your location and details, so they act immediately, without keeping you on the line or questioning whether your report is justified. They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. We also act preventively and react before a threat escalates.</p>
+</div>
+<div class="vid"><span class="play"></span></div>
+</div>
+</section>
+
+<!-- 3: sentence cards -->
+<section class="frame dark" id="3" style="left:0;top:900px">
+<span class="badge">3</span>
+<div class="pad" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;align-items:center">
+<div class="vid"><span class="play"></span></div>
+<div>
+<h2>Why SafeMe and not the emergency number?</h2>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:32px;font-size:15px;line-height:1.55">
+<div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px"><div class="lbl" style="color:var(--blue-action-300)">01</div><p style="margin:10px 0 0">Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called safety gap.</p></div>
+<div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px"><div class="lbl" style="color:var(--blue-action-300)">02</div><p style="margin:10px 0 0">When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention.</p></div>
+<div style="background:#fff;color:var(--text-strong);border-radius:16px;padding:20px;grid-column:span 2"><div class="lbl" style="color:var(--blue-action-700)">03</div><p style="margin:10px 0 0;font:700 20px/1.4 var(--font-head)">This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears.</p></div>
+<div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px"><div class="lbl" style="color:var(--blue-action-300)">04</div><p style="margin:10px 0 0">The Assistant has access to your location and details, so they act immediately, without keeping you on the line or questioning whether your report is justified.</p></div>
+<div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px"><div class="lbl" style="color:var(--blue-action-300)">05</div><p style="margin:10px 0 0">They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. We also act preventively and react before a threat escalates.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4: light, big pull quote -->
+<section class="frame" id="4" style="left:1180px;top:900px;background:#fff">
+<span class="badge" style="background:var(--blue-800);color:#fff">4</span>
+<div class="pad" style="display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:64px;align-items:center">
+<div>
+<h2 style="color:var(--text-strong)">Why SafeMe and not the emergency number?</h2>
+<blockquote style="margin:32px 0 0;padding:0;font:700 28px/1.35 var(--font-head);color:var(--blue-action-700)">“This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears.”</blockquote>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:32px;padding-top:28px;border-top:1px solid var(--border-subtle);font-size:15px;line-height:1.6">
+<p style="margin:0">Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called safety gap. When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention.</p>
+<p style="margin:0">The Assistant has access to your location and details, so they act immediately, without keeping you on the line or questioning whether your report is justified. They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. We also act preventively and react before a threat escalates.</p>
+</div>
+</div>
+<div class="vid"><span class="play"></span></div>
+</div>
+</section>
+
+<!-- 5: tabs -->
+<section class="frame dark" id="5" style="left:0;top:1800px">
+<span class="badge">5</span>
+<div class="pad" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;align-items:center">
+<div class="t5">
+<h2>Why SafeMe and not the emergency number?</h2>
+<div style="display:inline-flex;gap:4px;padding:4px;margin-top:32px;border-radius:999px;background:rgba(255,255,255,.1)">
+<button class="t5b" data-i="0" style="border:0;border-radius:999px;padding:12px 20px;font:600 15px var(--font-head);cursor:pointer">Safety gap</button>
+<button class="t5b" data-i="1" style="border:0;border-radius:999px;padding:12px 20px;font:600 15px var(--font-head);cursor:pointer">Safety Assistant</button>
+</div>
+<div class="t5p" style="margin-top:28px;font-size:18px;line-height:1.6;min-height:230px">
+<p style="margin:0">Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called safety gap. When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention. <span class="hl">This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears.</span></p>
+</div>
+<div class="t5p" style="margin-top:28px;font-size:18px;line-height:1.6;min-height:230px;display:none">
+<p style="margin:0">The Assistant has access to your location and details, so they act immediately, without keeping you on the line or questioning whether your report is justified. They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. <span class="hl">We also act preventively and react before a threat escalates.</span></p>
+</div>
+<p style="margin:8px 0 0;font-size:13px;color:rgba(255,255,255,.7)">Interactive: tap the tabs.</p>
+</div>
+<div class="vid"><span class="play"></span></div>
+</div>
+</section>
+
+<!-- 6: centered heading, video between two columns -->
+<section class="frame dark" id="6" style="left:1180px;top:1800px">
+<span class="badge">6</span>
+<div class="pad">
+<h2 style="text-align:center;max-width:720px;margin:0 auto">Why SafeMe and not the emergency number?</h2>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 280px minmax(0,1fr);gap:48px;align-items:center;margin-top:48px;font-size:16px;line-height:1.6">
+<div style="text-align:right"><div class="lbl" style="color:var(--blue-action-300)">Safety gap</div><p style="margin:14px 0 0;color:rgba(255,255,255,.88)">Between feeling unsafe and the moment emergency services can be called there is a gap, the so-called safety gap. When you feel uneasy but nothing has happened yet, the emergency number cannot help you, because there are no grounds for an intervention. This gap is filled by the Safety Assistant, who supports you as soon as anxiety appears.</p></div>
+<div class="vid"><span class="play"></span></div>
+<div><div class="lbl" style="color:var(--blue-action-300)">Safety Assistant</div><p style="margin:14px 0 0;color:rgba(255,255,255,.88)">The Assistant has access to your location and details, so they act immediately, without keeping you on the line or questioning whether your report is justified. They propose solutions straight away, provide support and, when necessary, direct the appropriate services to the scene. We also act preventively and react before a threat escalates.</p></div>
+</div>
+</div>
+</section>
+
+<script>
+(function(){const r=document.querySelector('.t5');const bs=r.querySelectorAll('.t5b'),ps=r.querySelectorAll('.t5p');function set(i){bs.forEach((b,j)=>{b.style.background=j==i?'#fff':'transparent';b.style.color=j==i?'var(--blue-800)':'#fff'});ps.forEach((p,j)=>p.style.display=j==i?'block':'none')}bs.forEach(b=>b.onclick=()=>set(+b.dataset.i));set(0)})();
+</script>
+</body>
+</html>

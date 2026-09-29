@@ -2,7 +2,7 @@
 
 Styled from the code in `trupek123/safeme-site` (synced 27.09.2026). Layout rules from the site: page max-width 1120px, section gap `--space-12`, cards `--radius-lg` + `--shadow-xs`, big panels `--radius-xl`.
 
-**Source of truth: repo `trupek123/safeme-site` main** (28.09.2026). It is newer than the live safeme.uk build. PL and EN use the same page structure. Copy lives in `content-and-facts.md`; components in `components/sections/`.
+**Section order checked against live safeme.uk on 29.09.2026** (the order below follows the live site). Code source: repo `trupek123/safeme-site` main. PL and EN use the same page structure. Copy lives in `content-and-facts.md`; components in `components/sections/`.
 
 ## Home (/)
 | Section | Components |
@@ -12,9 +12,9 @@ Styled from the code in `trupek123/safeme-site` (synced 27.09.2026). Layout rule
 | Who is your Safety Assistant | AssistantSection |
 | Call for help | HelpCallout (accent "One tap" / "jedno kliknięcie") |
 | Packages (+ PL: Dolicz do rachunku) | SectionHeader · BillingToggle · PricingCard ×3 · CarrierBilling (PL) |
-| Safety gap | SectionHeader · SafetyGapScale |
 | Reviews | CardCarousel of TestimonialCard |
 | Employee benefit | BenefitBanner |
+| Safety gap | SectionHeader · SafetyGapScale |
 | Closing | ClosingCTA |
 
 ## How it works (/about, /o-aplikacji)
@@ -24,12 +24,12 @@ Styled from the code in `trupek123/safeme-site` (synced 27.09.2026). Layout rule
 | Step by step | SectionHeader · HowItWorksSteps variant="timeline" ×2 (tone safe / danger) |
 | Who is your Safety Assistant | AssistantSection |
 | When to use the app | SectionHeader · VideoCard (left, red play) + UseCaseList (3 categories, last tone="danger") |
-| Why not just share my location with a friend? | SectionHeader (eyebrow) · CompareTable + VideoCard |
-| Why SafeMe and not the emergency number? | SplitPanel tone="dark" + VideoCard onDark |
+| Why SafeMe and not the emergency number? | SplitPanel tone="dark" gapScale + VideoCard onDark |
 | What makes us different (6) | CardCarousel of numbered cards |
 | Packages | BillingToggle · PricingCard ×3 |
-| Good questions | FAQAccordion |
 | Closing | ClosingCTA |
+
+Not on live /about (29.09.2026): "Why not just share my location with a friend?" (CompareTable) and "Good questions" (FAQAccordion). Components stay in the DS for reuse.
 
 ## For business (/offer)
 | Section | Components |
@@ -43,7 +43,7 @@ Styled from the code in `trupek123/safeme-site` (synced 27.09.2026). Layout rule
 | Onboarding process (5) | HowItWorksSteps variant="cards" (in CardCarousel) |
 | Cafeteria platforms | LogoStrip (Pluxee · Motivizer · Worksmile · Nais) |
 | Pricing (100+ / 200+ / 300+) | TierPriceCard ×3 (200+ highlight) |
-| Awards | AwardCard ×3 |
+| Awards | AwardCard ×3 + 2 gala photos |
 | Reviews (B2B) | TestimonialCard, author = "Name, Role of Company" |
 | FAQ | FAQAccordion |
 | Closing | ContactPersonCTA (Karol Bedyński, Calendly) |
@@ -52,7 +52,11 @@ Styled from the code in `trupek123/safeme-site` (synced 27.09.2026). Layout rule
 Hero (Buy the voucher) · A perfect gift + voucher front/back images · How to use (HowItWorksSteps ×3) · What is SafeMe (+ mockup) · FAQAccordion · ClosingCTA with two buttons (Buy the voucher · Download the app) as children.
 
 ## FAQ (/faq)
-HeroTitle (light) · FAQAccordion · "See us in action" VideoCard ×4 · closing → Contact us.
+HeroTitle (light) · FAQAccordion · "See us in action" VideoCard ×4 (vertical) · closing (eyebrow "Still have questions?") → Contact us.
+
+### Live-site issues found 29.09.2026
+- UK pricing buttons ("Choose Personal/Family/Family+") link to `/pobierz-aplikacje` (PL path); should be `/download-app`.
+- /faq "See us in action" loads `maxresdefault` (horizontal) thumbnails; use `oar2` so videos stay vertical 9:16.
 
 ## Rules
 

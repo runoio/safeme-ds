@@ -8,7 +8,6 @@ uploads/
 
 # Bundled one-off exports
 *.standalone.html
-SafeMe App UI Kit.html
 
 .DS_Store
 node_modules/

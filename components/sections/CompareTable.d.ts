@@ -8,5 +8,5 @@ export interface CompareTableProps {
   style?: React.CSSProperties;
 }
 
-/** Comparison table (About: 'Why SafeMe and not the emergency number?'). */
+/** Two-lane numbered timeline: alternative (muted) vs SafeMe. Pair with a vertical VideoCard on the right. */
 export function CompareTable(props: CompareTableProps): JSX.Element;

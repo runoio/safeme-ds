@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="styles.css">
+<style>
+body{margin:0;font-family:var(--font-body);color:var(--text-body)}
+a{color:var(--text-link)}a:hover{color:var(--blue-action-600)}
+.frame{position:absolute;width:1100px;background:var(--surface-page);border-radius:24px;overflow:hidden;box-shadow:0 2px 12px rgba(14,19,83,.08)}
+.badge{position:absolute;top:16px;right:16px;z-index:5;background:var(--blue-800);color:#fff;font:700 14px/1 var(--font-head);padding:8px 12px;border-radius:999px}
+.pad{padding:64px}
+.eyebrow{font:700 13px/1 var(--font-head);letter-spacing:.08em;text-transform:uppercase;color:var(--blue-action-700);margin:0 0 12px}
+h2{font:800 40px/1.15 var(--font-head);color:var(--text-strong);margin:0 0 14px;text-wrap:balance}
+.sub{font-size:17px;line-height:1.55;margin:0;max-width:620px;text-wrap:pretty}
+.vid{position:relative;border-radius:24px;overflow:hidden;background:#000 center/cover no-repeat url(https://img.youtube.com/vi/aElGkelznvM/hqdefault.jpg)}
+.vid::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.7))}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--safeme-red-action);display:grid;place-items:center;z-index:2;box-shadow:0 6px 20px rgba(237,55,69,.5)}
+.play::before{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.cap{position:absolute;left:18px;bottom:16px;z-index:2;color:#fff;font:600 15px/1.3 var(--font-head)}
+.lbl{font:700 12px/1.2 var(--font-head);letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.h4{font:700 16px/1.3 var(--font-head);color:var(--text-strong)}
+</style>
+</head>
+<body>
+
+<!-- 1: two opposing cards -->
+<section class="frame" id="1" style="left:0;top:0">
+<span class="badge">1</span>
+<div class="pad">
+<p class="eyebrow">The question everyone asks</p>
+<h2>Why not just share my location with a friend?</h2>
+<p class="sub">Because your friend might be asleep, and even if they're not, they won't know what to do next.</p>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 260px;gap:20px;margin-top:40px;align-items:stretch">
+<div style="background:var(--neutral-100);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:22px">
+<div class="h4" style="color:var(--text-muted)">Sharing your location</div>
+<div><div class="lbl">Who's watching</div><p style="margin:6px 0 0;line-height:1.5">A friend, when they happen to check their phone</p></div>
+<div><div class="lbl">Spotting a problem</div><p style="margin:6px 0 0;line-height:1.5">Only if they notice the dot has stopped moving</p></div>
+<div><div class="lbl">What happens next</div><p style="margin:6px 0 0;line-height:1.5">They worry, keep calling, and have to decide under stress</p></div>
+<div><div class="lbl">Your loved ones</div><p style="margin:6px 0 0;line-height:1.5">Stay up waiting for your message</p></div>
+</div>
+<div style="background:var(--blue-800);color:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:22px;box-shadow:0 16px 40px rgba(14,19,83,.25)">
+<div class="h4" style="color:#fff;display:flex;align-items:center;gap:8px"><img src="assets/sygnet-red.svg" alt="" style="height:18px">SafeMe</div>
+<div><div class="lbl" style="color:var(--blue-action-300)">Who's watching</div><p style="margin:6px 0 0;line-height:1.5">A trained Safety Assistant, on duty 24/7</p></div>
+<div><div class="lbl" style="color:var(--blue-action-300)">Spotting a problem</div><p style="margin:6px 0 0;line-height:1.5">The Assistant sees when you leave your route or stop, and checks in</p></div>
+<div><div class="lbl" style="color:var(--blue-action-300)">What happens next</div><p style="margin:6px 0 0;line-height:1.5">A professional assesses the situation and sends help with your exact location</p></div>
+<div><div class="lbl" style="color:var(--blue-action-300)">Your loved ones</div><p style="margin:6px 0 0;line-height:1.5;font-weight:600">Can go to sleep</p></div>
+</div>
+<div class="vid"><span class="play"></span><span class="cap">One tap safety assistant</span></div>
+</div>
+</div>
+</section>
+
+<!-- 2: dark panel, row pairs with arrow -->
+<section class="frame" id="2" style="left:1180px;top:0;background:var(--gradient-hero);color:#fff">
+<span class="badge" style="background:#fff;color:var(--blue-800)">2</span>
+<div class="pad" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:start">
+<div>
+<p class="eyebrow" style="color:var(--blue-action-300)">The question everyone asks</p>
+<h2 style="color:#fff">Why not just share my location with a friend?</h2>
+<p class="sub" style="color:rgba(255,255,255,.85)">Because your friend might be asleep, and even if they're not, they won't know what to do next.</p>
+<div style="margin-top:36px;display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:150px minmax(0,1fr) 28px minmax(0,1fr);gap:16px;padding:0 0 12px;font:600 13px var(--font-head);color:var(--blue-action-300)"><span></span><span>Sharing your location</span><span></span><span>SafeMe</span></div>
+<div style="display:grid;grid-template-columns:150px minmax(0,1fr) 28px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.15);align-items:start"><span class="h4" style="color:#fff;font-size:15px">Who's watching</span><span style="color:rgba(255,255,255,.7);line-height:1.5">A friend, when they happen to check their phone</span><span style="color:var(--blue-action-500);font-size:20px">→</span><span style="line-height:1.5;font-weight:600">A trained Safety Assistant, on duty 24/7</span></div>
+<div style="display:grid;grid-template-columns:150px minmax(0,1fr) 28px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.15);align-items:start"><span class="h4" style="color:#fff;font-size:15px">Spotting a problem</span><span style="color:rgba(255,255,255,.7);line-height:1.5">Only if they notice the dot has stopped moving</span><span style="color:var(--blue-action-500);font-size:20px">→</span><span style="line-height:1.5;font-weight:600">The Assistant sees when you leave your route or stop, and checks in</span></div>
+<div style="display:grid;grid-template-columns:150px minmax(0,1fr) 28px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.15);align-items:start"><span class="h4" style="color:#fff;font-size:15px">What happens next</span><span style="color:rgba(255,255,255,.7);line-height:1.5">They worry, keep calling, and have to decide under stress</span><span style="color:var(--blue-action-500);font-size:20px">→</span><span style="line-height:1.5;font-weight:600">A professional assesses the situation and sends help with your exact location</span></div>
+<div style="display:grid;grid-template-columns:150px minmax(0,1fr) 28px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.15);align-items:start"><span class="h4" style="color:#fff;font-size:15px">Your loved ones</span><span style="color:rgba(255,255,255,.7);line-height:1.5">Stay up waiting for your message</span><span style="color:var(--blue-action-500);font-size:20px">→</span><span style="line-height:1.5;font-weight:600">Can go to sleep</span></div>
+</div>
+</div>
+<div class="vid" style="height:540px;margin-top:8px"><span class="play"></span><span class="cap">One tap safety assistant</span></div>
+</div>
+</section>
+
+<!-- 3: interactive toggle -->
+<section class="frame" id="3" style="left:0;top:820px">
+<span class="badge">3</span>
+<div class="pad" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;align-items:center">
+<div class="vid" style="height:520px"><span class="play"></span><span class="cap">One tap safety assistant</span></div>
+<div>
+<p class="eyebrow">The question everyone asks</p>
+<h2>Why not just share my location with a friend?</h2>
+<p class="sub">Because your friend might be asleep, and even if they're not, they won't know what to do next.</p>
+<div class="t3" data-mode="safe" style="margin-top:32px">
+<div style="display:inline-flex;background:var(--neutral-100);border-radius:999px;padding:4px;gap:4px">
+<button class="t3b" data-v="friend" style="border:0;border-radius:999px;padding:12px 20px;font:600 15px var(--font-head);cursor:pointer">Sharing your location</button>
+<button class="t3b" data-v="safe" style="border:0;border-radius:999px;padding:12px 20px;font:600 15px var(--font-head);cursor:pointer">SafeMe</button>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px">
+<div class="t3c" style="border-radius:16px;padding:20px;transition:.25s"><div class="lbl">Who's watching</div><p class="f" style="margin:8px 0 0;line-height:1.5">A friend, when they happen to check their phone</p><p class="s" style="margin:8px 0 0;line-height:1.5">A trained Safety Assistant, on duty 24/7</p></div>
+<div class="t3c" style="border-radius:16px;padding:20px;transition:.25s"><div class="lbl">Spotting a problem</div><p class="f" style="margin:8px 0 0;line-height:1.5">Only if they notice the dot has stopped moving</p><p class="s" style="margin:8px 0 0;line-height:1.5">The Assistant sees when you leave your route or stop, and checks in</p></div>
+<div class="t3c" style="border-radius:16px;padding:20px;transition:.25s"><div class="lbl">What happens next</div><p class="f" style="margin:8px 0 0;line-height:1.5">They worry, keep calling, and have to decide under stress</p><p class="s" style="margin:8px 0 0;line-height:1.5">A professional assesses the situation and sends help with your exact location</p></div>
+<div class="t3c" style="border-radius:16px;padding:20px;transition:.25s"><div class="lbl">Your loved ones</div><p class="f" style="margin:8px 0 0;line-height:1.5">Stay up waiting for your message</p><p class="s" style="margin:8px 0 0;line-height:1.5">Can go to sleep</p></div>
+</div>
+<p style="margin:14px 0 0;font-size:13px;color:var(--text-muted)">Interactive: tap the switch.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4: scenario timeline with two lanes -->
+<section class="frame" id="4" style="left:1180px;top:820px;background:#fff">
+<span class="badge">4</span>
+<div class="pad">
+<p class="eyebrow">The question everyone asks</p><h2>Why not just share my location with a friend?</h2><p class="sub">Because your friend might be asleep, and even if they're not, they won't know what to do next.</p>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;align-items:center;margin-top:44px">
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr)">
+<div class="h4" style="text-align:right;color:var(--text-muted);padding-bottom:14px">Sharing your location</div><div></div><div class="h4" style="padding-bottom:14px;color:var(--blue-action-700)">SafeMe</div>
+<p style="text-align:right;margin:0;padding:18px 0;color:var(--text-muted);line-height:1.5">A friend, when they happen to check their phone</p><div style="display:flex;flex-direction:column;align-items:center"><span style="width:2px;flex:1;background:var(--neutral-200)"></span><span style="font:700 12px var(--font-head);color:#fff;background:var(--blue-800);border-radius:999px;padding:6px 10px;white-space:nowrap;margin:-2px 0">1</span><span style="width:2px;flex:1;background:var(--neutral-200)"></span></div><div style="padding:18px 0"><div class="lbl">Who's watching</div><p style="margin:4px 0 0;line-height:1.5;color:var(--text-strong);font-weight:600">A trained Safety Assistant, on duty 24/7</p></div>
+<p style="text-align:right;margin:0;padding:18px 0;color:var(--text-muted);line-height:1.5">Only if they notice the dot has stopped moving</p><div style="display:flex;flex-direction:column;align-items:center"><span style="width:2px;flex:1;background:var(--neutral-200)"></span><span style="font:700 12px var(--font-head);color:#fff;background:var(--blue-800);border-radius:999px;padding:6px 10px">2</span><span style="width:2px;flex:1;background:var(--neutral-200)"></span></div><div style="padding:18px 0"><div class="lbl">Spotting a problem</div><p style="margin:4px 0 0;line-height:1.5;color:var(--text-strong);font-weight:600">The Assistant sees when you leave your route or stop, and checks in</p></div>
+<p style="text-align:right;margin:0;padding:18px 0;color:var(--text-muted);line-height:1.5">They worry, keep calling, and have to decide under stress</p><div style="display:flex;flex-direction:column;align-items:center"><span style="width:2px;flex:1;background:var(--neutral-200)"></span><span style="font:700 12px var(--font-head);color:#fff;background:var(--blue-800);border-radius:999px;padding:6px 10px">3</span><span style="width:2px;flex:1;background:var(--neutral-200)"></span></div><div style="padding:18px 0"><div class="lbl">What happens next</div><p style="margin:4px 0 0;line-height:1.5;color:var(--text-strong);font-weight:600">A professional assesses the situation and sends help with your exact location</p></div>
+<p style="text-align:right;margin:0;padding:18px 0;color:var(--text-muted);line-height:1.5">Stay up waiting for your message</p><div style="display:flex;flex-direction:column;align-items:center"><span style="width:2px;flex:1;background:var(--neutral-200)"></span><span style="font:700 12px var(--font-head);color:#fff;background:var(--safeme-red-action);border-radius:999px;padding:6px 10px">4</span><span style="width:2px;flex:1;background:transparent"></span></div><div style="padding:18px 0"><div class="lbl">Your loved ones</div><p style="margin:4px 0 0;line-height:1.5;color:var(--text-strong);font-weight:600">Can go to sleep</p></div>
+</div>
+<div class="vid" style="aspect-ratio:9/16;background-image:url(https://i.ytimg.com/vi/aElGkelznvM/oar2.jpg)"><span class="play"></span><span class="cap">One tap safety assistant</span></div>
+</div>
+</div>
+</section>
+
+<!-- 5: 2x2 cards, strike vs answer, video banner -->
+<section class="frame" id="5" style="left:0;top:1640px">
+<span class="badge">5</span>
+<div class="pad">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center"><p class="eyebrow">The question everyone asks</p><h2 style="max-width:720px">Why not just share my location with a friend?</h2><p class="sub">Because your friend might be asleep, and even if they're not, they won't know what to do next.</p></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:40px">
+<div style="background:#fff;border:1px solid var(--border-subtle);border-radius:24px;padding:28px"><div class="lbl" style="color:var(--blue-action-700)">Who's watching</div><p style="margin:14px 0 0;color:var(--text-muted);text-decoration:line-through;text-decoration-color:var(--neutral-300);line-height:1.5">A friend, when they happen to check their phone</p><p style="margin:10px 0 0;font:700 20px/1.35 var(--font-head);color:var(--text-strong)">A trained Safety Assistant, on duty 24/7</p></div>
+<div style="background:#fff;border:1px solid var(--border-subtle);border-radius:24px;padding:28px"><div class="lbl" style="color:var(--blue-action-700)">Spotting a problem</div><p style="margin:14px 0 0;color:var(--text-muted);text-decoration:line-through;text-decoration-color:var(--neutral-300);line-height:1.5">Only if they notice the dot has stopped moving</p><p style="margin:10px 0 0;font:700 20px/1.35 var(--font-head);color:var(--text-strong)">The Assistant sees when you leave your route or stop, and checks in</p></div>
+<div style="background:#fff;border:1px solid var(--border-subtle);border-radius:24px;padding:28px"><div class="lbl" style="color:var(--blue-action-700)">What happens next</div><p style="margin:14px 0 0;color:var(--text-muted);text-decoration:line-through;text-decoration-color:var(--neutral-300);line-height:1.5">They worry, keep calling, and have to decide under stress</p><p style="margin:10px 0 0;font:700 20px/1.35 var(--font-head);color:var(--text-strong)">A professional assesses the situation and sends help with your exact location</p></div>
+<div style="background:#fff;border:1px solid var(--border-subtle);border-radius:24px;padding:28px"><div class="lbl" style="color:var(--blue-action-700)">Your loved ones</div><p style="margin:14px 0 0;color:var(--text-muted);text-decoration:line-through;text-decoration-color:var(--neutral-300);line-height:1.5">Stay up waiting for your message</p><p style="margin:10px 0 0;font:700 20px/1.35 var(--font-head);color:var(--text-strong)">Can go to sleep</p></div>
+</div>
+<div class="vid" style="height:300px;margin-top:20px"><span class="play"></span><span class="cap">One tap safety assistant</span></div>
+</div>
+</section>
+
+<!-- 6: big video left, stacked answer list with numbers -->
+<section class="frame" id="6" style="left:1180px;top:1640px;background:var(--neutral-100)">
+<span class="badge">6</span>
+<div class="pad" style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:56px">
+<div style="display:flex;flex-direction:column;gap:28px">
+<div><p class="eyebrow">The question everyone asks</p><h2 style="font-size:36px">Why not just share my location with a friend?</h2><p class="sub" style="font-size:16px">Because your friend might be asleep, and even if they're not, they won't know what to do next.</p></div>
+<div class="vid" style="flex:1;min-height:360px"><span class="play"></span><span class="cap">One tap safety assistant</span></div>
+</div>
+<div style="background:#fff;border-radius:24px;padding:12px 32px;display:flex;flex-direction:column">
+<div style="padding:24px 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px"><span style="font:800 28px/1 var(--font-head);color:var(--blue-action-500)">01</span><div><div class="h4">Who's watching</div><p style="margin:10px 0 0;font:600 17px/1.45 var(--font-body);color:var(--text-strong)">A trained Safety Assistant, on duty 24/7</p><p style="margin:8px 0 0;font-size:14px;color:var(--text-muted);line-height:1.5">Sharing your location: A friend, when they happen to check their phone</p></div></div>
+<div style="padding:24px 0;border-top:1px solid var(--border-subtle);display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px"><span style="font:800 28px/1 var(--font-head);color:var(--blue-action-500)">02</span><div><div class="h4">Spotting a problem</div><p style="margin:10px 0 0;font:600 17px/1.45 var(--font-body);color:var(--text-strong)">The Assistant sees when you leave your route or stop, and checks in</p><p style="margin:8px 0 0;font-size:14px;color:var(--text-muted);line-height:1.5">Sharing your location: Only if they notice the dot has stopped moving</p></div></div>
+<div style="padding:24px 0;border-top:1px solid var(--border-subtle);display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px"><span style="font:800 28px/1 var(--font-head);color:var(--blue-action-500)">03</span><div><div class="h4">What happens next</div><p style="margin:10px 0 0;font:600 17px/1.45 var(--font-body);color:var(--text-strong)">A professional assesses the situation and sends help with your exact location</p><p style="margin:8px 0 0;font-size:14px;color:var(--text-muted);line-height:1.5">Sharing your location: They worry, keep calling, and have to decide under stress</p></div></div>
+<div style="padding:24px 0;border-top:1px solid var(--border-subtle);display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px"><span style="font:800 28px/1 var(--font-head);color:var(--blue-action-500)">04</span><div><div class="h4">Your loved ones</div><p style="margin:10px 0 0;font:600 17px/1.45 var(--font-body);color:var(--text-strong)">Can go to sleep</p><p style="margin:8px 0 0;font-size:14px;color:var(--text-muted);line-height:1.5">Sharing your location: Stay up waiting for your message</p></div></div>
+</div>
+</div>
+</section>
+
+<script>
+(function(){const r=document.querySelector('.t3');function set(m){r.dataset.mode=m;r.querySelectorAll('.t3b').forEach(b=>{const on=b.dataset.v===m;b.style.background=on?(m==='safe'?'var(--blue-800)':'#fff'):'transparent';b.style.color=on?(m==='safe'?'#fff':'var(--text-strong)'):'var(--text-muted)';b.style.boxShadow=on?'0 2px 8px rgba(14,19,83,.12)':'none'});r.querySelectorAll('.t3c').forEach(c=>{c.style.background=m==='safe'?'var(--blue-action-100)':'#fff';c.style.border=m==='safe'?'1px solid transparent':'1px solid var(--border-subtle)';c.querySelector('.f').style.display=m==='safe'?'none':'block';const s=c.querySelector('.s');s.style.display=m==='safe'?'block':'none';s.style.color='var(--text-strong)';s.style.fontWeight='600'})}r.querySelectorAll('.t3b').forEach(b=>b.onclick=()=>set(b.dataset.v));set('safe')})();
+</script>
+</body>
+</html>

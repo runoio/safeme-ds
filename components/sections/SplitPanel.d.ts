@@ -10,6 +10,10 @@ export interface SplitPanelProps {
   tone?: 'dark' | 'light';
   /** Media column max width. @default 260 */
   mediaWidth?: number;
+  /** Safety-gap bar labels [left, middle (highlighted), right], e.g. ['Feeling unsafe','Safety gap · Safety Assistant','Emergency services']. */
+  gapScale?: [string, string, string];
+  /** Exact sentence from `text` to render in bold. */
+  highlight?: string;
   style?: React.CSSProperties;
 }
 
