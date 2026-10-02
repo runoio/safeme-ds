@@ -31,6 +31,12 @@ The product's core idea is closing the **"Safety Gap"** — the grey zone betwee
 
 ---
 
+## Fixed vs flexible
+This design system is a **foundation, not a closed set**. Components, section layouts, templates and print/video examples are proven starting points; new layouts, sections, formats and creative directions are welcome as long as they are built on the foundations.
+- **Fixed:** facts and prices (`guidelines/content-and-facts.md`), Obserwacja/Pomoc naming, color meaning (action red = help only, brand red = logo + one accent), logo, vertical 9:16 video, calm human tone.
+- **Default:** tokens (type, spacing, radii, shadows), section order, slide/print/social layouts — follow them, and say why when you depart.
+- **Open:** new compositions, section types, campaigns, formats and copy in the brand voice. When something new proves itself, add it here as a component or guideline.
+
 ## Components
 Reusable primitives live in `components/`. Built for this system:
 
