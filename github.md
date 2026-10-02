@@ -3,12 +3,21 @@ branch: main
 source: runoio/safeme-site (app/)
 
 ## Last sync
+date: 2026-10-02T13:40:00Z
+
+### Updated in this project
+- ai-guidelines/: brand-guidelines.md (AI-ready brand rules) + how-to-use.md
+- SOSButton: Observation icon = navigation arrow; B2B pricing PL+UK from safeme.pl/oferta
+- Photo library: 16 photos in assets/photos + guidelines/photo-library.card.html
+- Print rules: awards as outlined pills, Dostępni 24/7 tag, store badges in brand colors
+
+## Sync history
+### Previous sync
 date: 2026-09-29T11:04:35Z
 
 ### Updated in this project
 - safeme-ds@29f4d35 verified identical to this project (all 167 files match)
 
-## Sync history
 ### 2026-09-27T22:42:26Z (safeme-site)
 - Verified main is current (no commits since f7d59ec6c104); code is newer than live safeme.uk — content guidelines now follow the code
 - Section components in `components/sections/` restyled 1:1 from `app/globals.css`

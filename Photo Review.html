@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<style>
+body{margin:0;padding:32px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+a{color:var(--text-link)}a:hover{color:var(--blue-action-600)}
+h1{font:800 28px/1.2 var(--font-head);color:var(--text-strong);margin:0 0 6px}
+.s{margin:0 0 24px;color:var(--text-muted)}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+.c{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:opacity .2s}
+.c.off{opacity:.35}
+.c .im{background:var(--neutral-100);display:block;height:300px;padding:12px;box-sizing:border-box;overflow:hidden}.c img{width:100%;height:100%;object-fit:contain;display:block;cursor:zoom-in}.fmt{font:600 12px var(--font-head);color:var(--blue-action-700)}
+.b{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.t{display:flex;gap:10px;align-items:baseline}
+.n{font:700 12px/1 var(--font-head);color:#fff;background:var(--blue-800);border-radius:999px;padding:5px 9px}
+.nm{font:700 14px var(--font-head);color:var(--text-strong)}
+.u{font-size:13px;color:var(--text-muted)}
+.tg{display:flex;gap:6px}
+.tg button{flex:1;border:1px solid var(--border-default);background:#fff;border-radius:999px;padding:8px;font:600 13px var(--font-head);cursor:pointer;color:var(--text-strong)}
+.tg button.on.k{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+.tg button.on.r{background:var(--action-red-100);color:var(--action-red-700);border-color:var(--action-red-100)}
+.sum{position:sticky;bottom:0;margin-top:24px;background:var(--blue-800);color:#fff;border-radius:16px;padding:16px 20px;font-size:14px;line-height:1.5}
+#lb{position:fixed;inset:0;background:rgba(5,6,15,.9);display:none;place-items:center;cursor:zoom-out;z-index:9}
+#lb img{max-width:92vw;max-height:92vh;border-radius:16px}
+</style>
+</head>
+<body>
+<h1>Przegląd zdjęć (16)</h1>
+<p class="s">Kliknij zdjęcie, żeby powiększyć. Oznacz „Zostaw” albo „Usuń”, a na dole skopiuj podsumowanie do czatu.</p>
+<div class="g" id="g"></div>
+<div class="sum" id="sum"></div>
+<div id="lb"><img alt=""></div>
+<script>
+const P=[
+['hero-home.jpg','Hero: Home, Dla firm'],['hero-about.jpg','Hero: O aplikacji'],['hero-business.jpg','Hero: Voucher, OG Dla firm'],['hero-download.jpg','Hero: Pobierz aplikację'],['hero-voucher.jpg','Hero: Voucher, prezent'],
+['security-assistant.jpg','Sekcja „Kim jest Asystent”'],['assistants-at-work.jpg','Zespół przy pracy (baner)'],
+['lp-health.png','LP Zdrowie'],['lp-teens.png','LP Nastolatki'],['lp-seniors.png','LP Seniorzy'],['lp-dating.png','LP Randki'],['lp-commute.png','LP Praca / dojazdy'],['lp-taxi.png','LP Taxi'],['lp-real-estate.jpg','LP Nieruchomości'],
+['police-night.png','„Dlaczego SafeMe, a nie 112?”'],['real-estate-agent.jpg','LP Nieruchomości, sekcja']];
+const fmt=r=>{const R=[[16/9,"16:9"],[3/2,"3:2"],[4/3,"4:3"],[1,"1:1"],[4/5,"4:5"],[3/4,"3:4"],[2/3,"2:3"],[9/16,"9:16"],[21/9,"21:9"],[3,"3:1"]];let b=R[0];for(const x of R)if(Math.abs(Math.log(r/x[0]))<Math.abs(Math.log(r/b[0])))b=x;return (r>1.05?"poziome ":r<0.95?"pionowe ":"kwadrat ")+"~"+b[1]};
+const st=JSON.parse(localStorage.getItem('safeme-photo-review')||'{}');
+const g=document.getElementById('g');
+function render(){g.innerHTML=P.map((p,i)=>`<div class="c${st[i]==='r'?' off':''}"><div class="im"><img src="assets/photos/${p[0]}" alt="${p[1]}" data-i="${i}" onload="this.closest('.c').querySelector('.fmt').textContent=this.naturalWidth+' × '+this.naturalHeight+' px · '+fmt(this.naturalWidth/this.naturalHeight)"></div><div class="b"><div class="t"><span class="n">${i+1}</span><span class="nm">${p[0]}</span></div><span class="u">${p[1]}</span><span class="fmt"></span><div class="tg"><button class="k${st[i]==='k'?' on':''}" data-i="${i}" data-v="k">Zostaw</button><button class="r${st[i]==='r'?' on':''}" data-i="${i}" data-v="r">Usuń</button></div></div></div>`).join('');
+const k=P.filter((p,i)=>st[i]==='k').length,r=P.map((p,i)=>st[i]==='r'?(i+1):null).filter(Boolean);
+document.getElementById('sum').innerHTML=`Zostaw: ${k} · Usuń: ${r.length?r.join(', '):'—'} · Bez decyzji: ${P.length-k-r.length}<br><b>Do czatu:</b> usuń ${r.length?r.join(', '):'nic'}`;}
+g.onclick=e=>{const b=e.target.closest('button');if(b){const i=b.dataset.i;st[i]=st[i]===b.dataset.v?undefined:b.dataset.v;localStorage.setItem('safeme-photo-review',JSON.stringify(st));render();return}const im=e.target.closest('img');if(im){const lb=document.getElementById('lb');lb.querySelector('img').src=im.src;lb.style.display='grid'}};
+document.getElementById('lb').onclick=e=>e.currentTarget.style.display='none';
+render();
+</script>
+</body>
+</html>

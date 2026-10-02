@@ -157,7 +157,7 @@ Load Lucide from CDN: `<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lu
 
 ## Index / Manifest
 - `styles.css` — global entry (import this). `@import`s the token files.
-- `assets/photos|awards|partners|operators|mockups/` — site media copied from safeme-site `public/media` (use these, never hot-link).
+- `assets/photos|awards|partners|operators|mockups/` — site media copied from safeme-site `public/media` (use these, never hot-link). Photo library (02.10.2026): site heroes `hero-home/about/business/download/voucher`, people `security-assistant`, `assistants-at-work`, LP heroes `lp-health/teens/seniors/dating/commute/taxi/real-estate`, context `police-night`, `real-estate-agent`. Card: `guidelines/photo-library.card.html`.
 - `tokens/` — `colors.css`, `typography.css`, `spacing.css` (radius, shadow, motion), `fonts.css` (Montserrat + Inter via Google Fonts).
 - `assets/` — logos (`logo-black/white`, `-shadow` variants) and sygnet (`sygnet-black/outline/red`) as SVG.
 - `components/core/` — Button, IconButton, Input, Switch, Badge, StatusPill, Card (+ `core.card.html`).

@@ -53,9 +53,9 @@ Both are **unlimited** in every plan.
 **Free trial:** first 7 days free, every plan.
 **Voucher:** 360 days of protection for **199,90 zł** — "płacisz jak za 10 miesięcy, a korzystasz przez cały rok".
 
-**B2B (UK, per user / month, invoiced):** 100+ £6.39 (retail £7.99) · 200+ £5.59 (save 30%) · 300+ custom offer. No onboarding costs, no upfront fees; unlimited Help + Observations per licence.
+**B2B (per employee / month, invoiced; rule 100+ = −20%, 200+ = −30% of retail, synced 02.10.2026 from safeme-site `lib/i18n.ts`):** PL 100+ 15,99 zł / os. (cena detaliczna 19,99 zł) · 200+ 13,99 zł / os. (oszczędność 30%) · 300+ oferta indywidualna. UK 100+ £6.39 (retail £7.99) · 200+ £5.59 (save 30%) · 300+ custom offer. No onboarding costs, no upfront fees; unlimited Help + Observations per licence. Employer has no access to employees' location or usage.
 **Cafeteria platforms:** Pluxee · Motivizer · Worksmile · Nais.
-**Awards:** Innovation of the Year 2025 (Gold, Service + main prize) · Orzeł Innowacji 2025 · Mobile Trends Awards ("Mobile for safety").
+**Awards:** Innovation of the Year 2025 (Gold, Service + main prize) · Orzeł Innowacji 2025 · Mobile Trends Awards (nagroda główna, kategoria „Mobile w służbie bezpieczeństwa”).
 **B2B contact person:** Karol Bedyński, Head of Partnerships, co-founder.
 **Videos (YouTube ids):** t2u1c61gDxI How it works · 30 seconds · 4h3pY5HJ78k When I use SafeMe · bQXmvbEu5mg What is the safety gap? · aElGkelznvM One tap safety assistant.
 

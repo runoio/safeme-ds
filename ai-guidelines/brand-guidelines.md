@@ -243,14 +243,12 @@ Rules:
 
 ### 4.2 Presentations
 
-Background, text-density and video rules below are confirmed. Narrative structure, logo placement and chart rules are **PROPOSAL – to be confirmed**.
-
 - Format 16:9. Two backgrounds only: navy #0E1353 (cover, section dividers, closing) and light #F6F7FB or white (content). *Why: two backgrounds create rhythm without noise.*
 - Narrative structure (10–15 slides): 1) cover with promise, 2) the problem (situations of feeling unsafe), 3) the safety gap, 4) how SafeMe works (Observation and Help), 5) the Safety Assistant (human, licensed agency), 6) use cases, 7) proof (awards, reviews), 8) offer and prices, 9) next step / contact.
 - One message per slide. The slide title is a full sentence stating that message. *Why: the audience should get the point from titles alone.*
 - Text: max 50 words per content slide, max 4 bullets. *Why: decks are often sent and read without a presenter, so slides need enough text to stand alone.* Minimum 24 pt body, titles 40–60 pt Montserrat bold/extrabold.
-- Logo: full logo on the cover and closing slide; small sygnet in a corner of content slides. Not on every slide in large size.
-- Colors in charts: navy for SafeMe data, action blue for a second series, cool greys for comparisons. Never red for data unless it represents an emergency. No 3D charts, no pie charts with more than 4 slices.
+- Logo: full logo on the cover and closing slide only. No logo or sygnet on content slides. *Why: the content slides stay clean and the brand frames the deck.*
+- Colors in charts: navy for SafeMe data, action blue for a second series, cool greys for comparisons. Never red for data unless it represents an emergency. No 3D charts, no pie charts with more than 4 slices. *Why: the palette keeps SafeMe data recognizable and red reserved for help.*
 - Images: full-bleed calm photos on section dividers; phone mockups on product slides.
 - Video in decks: embed in a vertical 9:16 frame next to text, never stretched to fill a 16:9 slide.
 
@@ -267,15 +265,13 @@ Confirmed rules:
 - Music: calm, low-tempo ambient or soft electronic. No horror stings, sirens or alarm sounds as music. *Why: the music should lower tension, not build it.*
 - Colors: navy and cool tones in grading; red only on the Help button or the 112/999 point.
 
+- Pace: calm. 1 idea per shot, shots 1.5–3 s. No flashing, no strobe, no shaky "horror" camera. *Why: fast cuts and flashes read as alarm.*
+- Voice-over: calm, warm, confident, at normal speaking pace. *Why: the voice is the Safety Assistant's tone.*
+
 **PROPOSAL – to be confirmed**:
-- Pace: calm. 1 idea per shot, shots 1.5–3 s. No flashing, no strobe, no shaky "horror" camera.
-- No logo intro.
-- Voice-over: calm, warm, confident, at normal speaking pace.
 - Tone: reassuring. The threat is implied, never shown violently.
 
 ### 4.4 Social media
-
-Formats, emoji and hashtag rules are confirmed. Layout and copy structure are **PROPOSAL – to be confirmed**.
 
 Formats:
 - Reels / TikTok / Shorts: 9:16 vertical (1080 × 1920), see Video rules.
@@ -285,12 +281,12 @@ Formats:
 
 Layout:
 - Navy or light background, one headline (max ~8 words) in Montserrat extrabold, optional one brand-red accent word, small logo or sygnet in a corner.
-- Carousels: slide 1 = hook, slides 2–5 = one point each, last slide = CTA with logo.
+- Carousels: slide 1 = hook, slides 2–5 = one point each, last slide = CTA with logo. *Why: one point per slide keeps people swiping.*
 - Leave the outer 60 px free of text.
 
 Copy:
 - First line is the hook: a concrete situation or question ("Taksówka zjechała z trasy?").
-- 2–4 short sentences, then one CTA ("Testuj 7 dni za darmo – link w bio." / "Try it free for 7 days – link in bio.").
+- 2–4 short sentences, then one CTA *(why: short captions are read to the end on mobile)* ("Testuj 7 dni za darmo – link w bio." / "Try it free for 7 days – link in bio.").
 - Emoji: allowed in moderation, 1–3 per post, never in the headline on the graphic and never as alarm symbols (🚨, ⚠️, 🆘). *Why: a light touch keeps posts native to the platform without undermining the calm tone.*
 - Reviews: only real testimonials, quoted verbatim, with first name. Never write new testimonials.
 
@@ -303,15 +299,16 @@ Handles: Instagram / TikTok PL @safeme.official, UK @safeme.uk. Facebook, Linked
 
 ### 4.5 Print and B2B materials
 
-**PROPOSAL – to be confirmed** unless noted.
+Formats, layout, type sizes and CMYK are **PROPOSAL – to be confirmed**. Contact, pricing and legal rules are confirmed.
 
 - Formats: A4 one-pagers and offers, A5/DL leaflets, roll-ups (85 × 200 cm), voucher cards.
 - Layout: navy header or cover block, white body, generous margins (at least 15 mm). Logo top-left or centered on the cover.
 - Body text minimum 9 pt (leaflets) / 10–11 pt (documents); headings Montserrat bold.
 - Colors: build navy and red in CMYK from the hex values and proof before printing. *Why: #FF1616 and #ED3745 shift strongly in CMYK.*
-- Every B2B piece ends with a contact block: name, role and email, plus the demo-booking link or a QR code.
-- B2B prices are per user per month, net of the retail price, and must match Section 5 exactly.
-- Always include company legal details on offers and contracts (Section 5).
+- Every B2B piece ends with a contact block: name, role and email, plus the demo-booking link or a QR code. *Why: every B2B piece has one goal, booking a demo.*
+- B2B prices are per employee per month, invoiced, and must match Section 5 exactly (100+ = −20%, 200+ = −30%, 300+ = custom). Always show the retail price next to the 100+ tier. *Why: the discount is only clear against the retail price.*
+- Awards on print and B2B materials: no award logos. Show each award as an outlined pill (1 px cool-grey border #C3C7DA, fully rounded, small blue #006DDB medal line icon, award name in Montserrat semibold, navy text) in one row under the heading „Nagrody i wyróżnienia” / "Awards". *Why: third-party logos in different colors and styles break the layout; light pills in one style read as a clean trust signal and match the „Dostępni 24/7” tag.*
+- Always include company legal details on offers and contracts (Section 5). *Why: required on commercial documents.*
 
 ---
 
@@ -347,20 +344,36 @@ United Kingdom (GBP):
 
 Voucher (PL): 360 days of protection for **199,90 zł** — „płacisz jak za 10 miesięcy, a korzystasz przez cały rok”.
 
-### B2B pricing (UK, per user per month, invoiced)
-- 100+ users: £6.39 (retail £7.99)
-- 200+ users: £5.59 (save 30%)
+### B2B pricing (per employee per month, invoiced)
+Rule: 100+ users = 20% off the retail Personal price, 200+ users = 30% off, 300+ = custom quote. Same rule in both markets.
+
+Poland:
+- 100+ users: 15,99 zł / os. (cena detaliczna: 19,99 zł)
+- 200+ users: 13,99 zł / os. (oszczędność 30% vs cena detaliczna)
+- 300+ users: oferta indywidualna
+
+United Kingdom:
+- 100+ users: £6.39 / user (retail price: £7.99)
+- 200+ users: £5.59 / user (save 30% vs the retail price)
 - 300+ users: custom offer
-- No onboarding costs, no upfront fees; unlimited Help and Observations per licence.
+
+Both markets:
+- Fixed monthly fee per covered employee, invoiced. Licences can be added as the team grows.
+- No onboarding costs and no upfront fees. Onboarding is free; the company gets a dedicated account manager and 24/7 support.
+- Every licence includes unlimited Help calls and route Observations.
+- The employer does not see employees' location or usage. Location is visible only to the Safety Assistant, during an active report or Observation. The admin panel is for licence management only.
+- Onboarding needs no IT integration and takes a few days: package choice → onboarding and HR materials → admin panel → employees get an SMS link → protection starts.
+- Licences are billed monthly by the number of covered employees and can be increased at any time (e.g. seasonal hiring); detailed terms are set in the contract.
 - Cafeteria platforms (PL): Pluxee, Motivizer, Worksmile, Nais.
-- PL B2B prices are not listed here: ask the user.
+- Employer gets the Safe Employer certificate.
+- Demo: free 30-minute online presentation (employee app, admin panel, onboarding, plus a quote for the team) with Karol Bedyński (Head of Partnerships, co-founder), booked via Calendly or b2b@safeme.pl / b2b@safeme.uk.
 
 ### Proof points
 - Created by a **licensed security agency** („koncesjonowana agencja ochrony”).
 - Safety Assistants are qualified security and alarm-monitoring professionals, trained for crisis situations.
 - Stat: **„30 sekund — średni czas do pierwszego kontaktu od zgłoszenia”** (average time to first contact after a report). Use only this wording.
 - Data: processed in line with GDPR/RODO, stored on servers in the European Union, shared only with emergency services and only as part of an active report.
-- Awards: **Innovation of the Year 2025** (Gold in the "Service" category and main prize), **Orzeł Innowacji 2025** (Rzeczpospolita, "Social Good Solutions"), **Mobile Trends Awards** ("Mobile for safety"). Do not add others.
+- Awards: **Innovation of the Year 2025** (Gold in the "Service" category and main prize), **Orzeł Innowacji 2025** (Rzeczpospolita, "Social Good Solutions"), **Mobile Trends Awards** (main prize, category „Mobile w służbie bezpieczeństwa”). Do not add others.
 - SafeMe is described as the first employee benefit in Poland in the security-tech category („pierwszy w Polsce benefit pracowniczy z kategorii security-tech”). In the UK: "a first-of-its-kind employee benefit in the security-tech category".
 
 ### Approved key lines
