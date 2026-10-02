@@ -1,6 +1,6 @@
 # SafeMe — content & product facts
 
-Single source of truth for copy, pricing, and site structure. Updated 28.07.2026 from the client's content documents (`uploads/SafeMe_*.docx`, `*.xlsx`); re-synced 28.09.2026 against `trupek123/safeme-site` main (`lib/i18n.ts`) — the code is the source of truth and matches production. **Use these values verbatim — never invent claims, prices, or coverage.**
+Single source of truth for copy, pricing, and site structure. Updated 28.07.2026 from the client's content documents (`uploads/SafeMe_*.docx`, `*.xlsx`); re-synced 28.09.2026 against `runoio/safeme-site` main (`lib/i18n.ts`) — the code is the source of truth and matches production. **Use these values verbatim — never invent claims, prices, or coverage.**
 
 ## Company
 
@@ -110,7 +110,7 @@ Total: 12 service pages (10 bilingual + 2 PL-only), 4 thank-you pages, 7 landing
 - **Sections (order):** Jak to działa (3 kroki: Ustaw trasę → Asystent Bezpieczeństwa czuwa nad trasą → Gdy coś jest nie tak, reaguje; + 30 s video) · Kim jest Asystent Bezpieczeństwa (stats: 30 sekund · 24/7 · Człowiek, nie bot) · Wezwij pomoc · Pakiety · Safety gap (scale: Czujesz niepokój → Coś się dzieje → 112) · Opinie · Benefit pracowniczy · closing CTA
 - **Stat claim:** „30 sekund — średni czas do pierwszego kontaktu od zgłoszenia”.
 
-**Master copy = repo `trupek123/safeme-site` main, `lib/i18n.ts`** (matches production, verified with screenshots 28.09.2026).
+**Master copy = repo `runoio/safeme-site` main, `lib/i18n.ts`** (matches production, verified with screenshots 28.09.2026).
 
 ### Home (safeme.uk) — from code
 - **Eyebrow:** Safety Assistant 24/7

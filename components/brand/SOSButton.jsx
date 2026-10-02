@@ -3,8 +3,8 @@ import React from 'react';
 /**
  * SOSButton — the signature circular action control from the SafeMe app home.
  * Two brand variants:
- *   - 'help'    (default) → action red, label "POMOC" — the emergency-call button.
- *   - 'observe'           → action blue, label "OBSERWACJA" — start route monitoring.
+ *   - 'help'    (default) → action red, label "POMOC", headset icon (Lucide "headset") — the emergency-call button.
+ *   - 'observe'           → action blue, label "OBSERWACJA", navigation-arrow icon — start route monitoring.
  * A pulsing halo draws attention (on by default for 'help', off for 'observe').
  * `label`/`sublabel` override the variant defaults; press-and-hold semantics are the caller's concern.
  */
@@ -29,8 +29,8 @@ export function SOSButton({ variant = 'help', size = 200, label, sublabel, pulsi
   const text = label ?? v.label;
   const isPulsing = pulsing ?? v.pulse;
   const glyph = variant === 'observe'
-    ? 'M12 22s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z M12 8a3 3 0 100 6 3 3 0 000-6z'  // location pin
-    : 'M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 01-3.4 0';           // bell
+    ? 'M3 11 21 3l-8 18-2-8-8-2z' // navigation arrow (Lucide "navigation")
+    : 'M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z M21 16v2a4 4 0 0 1-4 4h-5'; // Lucide headset
 
   return (
     <button

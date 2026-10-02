@@ -72,7 +72,7 @@ Reusable primitives live in `components/`. Built for this system:
 - **CardCarousel** — scroll-snap card row (reviews, numbered cards).
 - **SplitPanel** — text + media panel, dark or light.
 
-All section components are styled 1:1 from `trupek123/safeme-site` (`app/globals.css`) — see `github.md` for the component ↔ source map.
+All section components are styled 1:1 from `runoio/safeme-site` (`app/globals.css`) — see `github.md` for the component ↔ source map.
 
 ### Intentional additions
 This system had no source component inventory, so a standard set was authored, plus two brand-specific primitives the product clearly needs: **SOSButton** (the emergency-call control that defines the product) and **Logo** (inline mark for reliable rendering).
@@ -146,6 +146,7 @@ No icon set was shipped with the brand assets. This system uses **[Lucide](https
 
 - Style: outline/stroke, 2px, rounded joins. Default size 18–24px in UI, 20px in icon buttons.
 - Color: inherit `currentColor`; muted (`--text-muted`) for decorative, dark blue for interactive, action blue for "safe" affordances.
+- **Obserwacja icon = navigation arrow** (Lucide `navigation`) — fixed, used by `SOSButton variant="observe"`. Pomoc icon = headset.
 - Common glyphs: `MapPin`, `Navigation`, `Phone`, `MessageCircle`, `ShieldCheck`, `Bell`, `Settings`, `User`, `Car`, `Bus`.
 - The **sygnet** (three red chevrons forming an "E") is the app-icon / brand glyph — use `Logo variant="sygnet"`, not a drawn substitute.
 - Emoji only in marketing award callouts, never product UI. No Unicode-char icons.
@@ -170,6 +171,7 @@ Load Lucide from CDN: `<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lu
 - `guidelines/mockup-halo.md` — the pulsing glow behind phone mockups.
 - `templates/web-hero/` — "Web hero (SafeMe)" starting template for consuming projects.
 - Foundation specimen cards: `guidelines/*.card.html` (Type, Colors, Spacing, Brand).
+- `ai-guidelines/brand-guidelines.md` — self-contained brand rules for ChatGPT / Gemini / Claude (paste or upload); `how-to-use.md` explains setup and tests.
 - `SKILL.md` — Agent-Skill wrapper for download/Claude Code use.
 
 ### Notes / caveats for the user

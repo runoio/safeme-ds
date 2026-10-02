@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="styles.css">
+<style>
+body{margin:0;font-family:var(--font-body)}
+a{color:var(--text-link)}a:hover{color:var(--blue-action-600)}
+.wrap{position:absolute;left:0;top:0;width:1600px;display:flex;flex-direction:column;gap:40px}
+.g h2{font:800 28px/1.2 var(--font-head);color:var(--text-strong);margin:0 0 6px}
+.g p.s{margin:0 0 20px;color:var(--text-muted);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.opt{background:var(--surface-card);border-radius:24px;padding:28px 16px 20px;display:flex;flex-direction:column;align-items:center;gap:16px;box-shadow:var(--shadow-sm);position:relative}
+.opt.cur{outline:3px solid var(--blue-action-700)}
+.n{position:absolute;top:12px;left:12px;font:700 13px/1 var(--font-head);color:#fff;background:var(--blue-800);border-radius:999px;padding:6px 10px}
+.tag{position:absolute;top:12px;right:12px;font:700 11px/1 var(--font-head);color:#fff;background:var(--blue-action-700);border-radius:999px;padding:6px 8px}
+.btn{width:150px;height:150px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fff;background:radial-gradient(circle at 50% 38%,var(--blue-action-300) 0%,var(--blue-action-500) 55%,var(--blue-action-600) 100%);box-shadow:var(--shadow-observe)}
+.btn span{font:700 13px/1 var(--font-head);letter-spacing:.02em}
+.row{display:flex;gap:12px;align-items:center}
+.sm{width:52px;height:52px;border-radius:16px;display:grid;place-items:center}
+.t{font:700 14px/1.3 var(--font-head);color:var(--text-strong);text-align:center;margin-bottom:-8px}
+.d{font-size:13px;line-height:1.45;color:var(--text-muted);text-align:center;margin:0;text-wrap:pretty}
+</style>
+</head>
+<body>
+<div class="wrap" id="w"></div>
+<script>
+const S=s=>()=>s;
+const A='M6.9 9.7 13.1 6.9 10.3 13.1 9.7 10.3z',A2='M10 6.6 12.5 13.4 10 12 7.5 13.4z';
+const G=[
+{id:'A',h:'Seria A: pierwsze propozycje',s:'10 różnych koncepcji.',cur:4,items:[
+['Lupa z pinem','Pin w soczewce: „patrzymy na Twoją lokalizację”.',S('<circle cx="10.5" cy="10.5" r="7"/><path d="M15.6 15.6 21 21"/><path d="M10.5 14.2s-3-2.6-3-4.7a3 3 0 0 1 6 0c0 2.1-3 4.7-3 4.7z"/><circle cx="10.5" cy="9.5" r=".9"/>')],
+['Oko z pinem','Źrenicą jest pin. Najmocniej mówi „czuwamy”.',S('<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><path d="M12 15.2s-2.4-2-2.4-3.8a2.4 2.4 0 0 1 4.8 0c0 1.8-2.4 3.8-2.4 3.8z"/>')],
+['Pin z falami','Pin nadający sygnał: obserwacja na żywo.',S('<path d="M12 21s-5-4.6-5-8.5a5 5 0 0 1 10 0c0 3.9-5 8.5-5 8.5z"/><circle cx="12" cy="12.5" r="1.8"/><path d="M5.2 6.2a9.5 9.5 0 0 1 13.6 0"/><path d="M7.8 8.6a5.8 5.8 0 0 1 8.4 0"/>')],
+['Trasa A → B','Kropkowana droga od startu do pinu celu.',S('<circle cx="5" cy="19" r="2"/><path d="M7 19h4a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h4" stroke-dasharray="2 2.6"/><path d="M18 11s-3.5-3.2-3.5-5.8a3.5 3.5 0 0 1 7 0C21.5 7.8 18 11 18 11z"/><circle cx="18" cy="5.3" r=".9"/>')],
+['Strzałka nawigacji','Symbol „jestem w drodze”.',S('<path d="M3 11 21 3l-8 18-2-8-8-2z"/>')],
+['Tarcza z pinem','Ochrona i lokalizacja w jednym.',S('<path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><path d="M12 15.5s-2.6-2.2-2.6-4.1a2.6 2.6 0 0 1 5.2 0c0 1.9-2.6 4.1-2.6 4.1z"/>')],
+['Celownik lokalizacji','Znany z map symbol „namierzamy Cię”.',S('<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>')],
+['Lornetka','Dosłowna „obserwacja”, ryzyko „podglądania”.',S('<circle cx="6.5" cy="15.5" r="3.5"/><circle cx="17.5" cy="15.5" r="3.5"/><path d="M10 15.5h4M4 12.5 6 5h3l1 7M20 12.5 18 5h-3l-1 7"/>')],
+['Pin z okiem','Oko w głowie pinu.',S('<path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><path d="M8.2 10s1.5-2.4 3.8-2.4 3.8 2.4 3.8 2.4-1.5 2.4-3.8 2.4S8.2 10 8.2 10z"/><circle cx="12" cy="10" r=".9"/>')],
+['Pin w okręgu ruchu','Pin otoczony łukiem ze strzałką.',S('<path d="M12 16s-3.2-2.8-3.2-5.2a3.2 3.2 0 0 1 6.4 0c0 2.4-3.2 5.2-3.2 5.2z"/><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M18 2.8v3.8h-3.8"/>')]
+]},
+{id:'B',h:'Seria B: lupa ze strzałką',s:'Warianty z Twojej wersji v2.',items:[
+['Lupa + strzałka, liniowa','Soczewka r = 8, strzałka jako kontur.',c=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="${A}"/>`],
+['Lupa + strzałka, wypełniona','Strzałka pełna, czytelna w 18 px.',c=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="${A}" fill="${c}"/>`],
+['Lupa + strzałka w górę','Strzałka „przed siebie”, wypełniona.',c=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="${A2}" fill="${c}"/>`],
+['Maksymalna soczewka','r = 9, gruba rączka, większa strzałka.',c=>`<circle cx="10.5" cy="10.5" r="9"/><path d="M17.2 17.2 22 22" stroke-width="3"/><path d="M6.9 10.2 14.3 6.9 11 14.3 10.3 11z" fill="${c}"/>`],
+['Pełna soczewka','Wypełnione koło, strzałka wycięta w tle.',(c,b)=>`<circle cx="10" cy="10" r="8.5" fill="${c}"/><path d="M16.2 16.2 21.5 21.5" stroke-width="2.6"/><path d="${A}" fill="${b}" stroke="${b}" stroke-width="1.2"/>`],
+['Soczewka z kreskami ruchu','Pełna strzałka i kreski: „w drodze”.',c=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="M8.2 9.5 13.3 7.2 11 12.3 10.5 10z" fill="${c}"/><path d="M5.6 11.6 7.4 10.8M6.6 13.6 8.4 12.8" stroke-width="1.6"/>`]
+]},
+{id:'C',h:'Seria C: zupełnie nowe kierunki',s:'6 koncepcji spoza pinu i lupy.',items:[
+['Ślady kroków','Dwa odciski stóp: „idziesz, a my jesteśmy obok”. Najbardziej ludzki.',c=>`<path d="M7 3.5c1.8 0 2.8 2 2.8 4.6 0 2.2-.9 3.9-2.8 3.9S4.2 10.3 4.2 8.1C4.2 5.5 5.2 3.5 7 3.5z" fill="${c}" stroke="none"/><path d="M5.2 13.6h3.6v1.6a1.8 1.8 0 0 1-3.6 0z" fill="${c}" stroke="none"/><path d="M17 8.5c1.8 0 2.8 2 2.8 4.6 0 2.2-.9 3.9-2.8 3.9s-2.8-1.7-2.8-3.9c0-2.6 1-4.6 2.8-4.6z" fill="${c}" stroke="none"/><path d="M15.2 18.6h3.6v1.6a1.8 1.8 0 0 1-3.6 0z" fill="${c}" stroke="none"/>`],
+['Pin ze słuchawkami','Pin „nosi” słuchawki Asystenta: człowiek czuwa nad lokalizacją. Para z ikoną Pomocy.',c=>`<path d="M12 21s-5-4.4-5-8.3a5 5 0 0 1 10 0c0 3.9-5 8.3-5 8.3z"/><circle cx="12" cy="12.6" r="1.6"/><path d="M4.5 12V10a7.5 7.5 0 0 1 15 0v2"/><rect x="3" y="11" width="2.6" height="4" rx="1.2" fill="${c}"/><rect x="18.4" y="11" width="2.6" height="4" rx="1.2" fill="${c}"/>`],
+['Kompas','Igła kompasu: kierunek i pewność drogi. Klasyczny, nie kojarzy się z inwigilacją.',(c,b)=>`<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.2 13.2 8.5 15.5 10.8 10.8z" fill="${c}"/><circle cx="12" cy="12" r="1" fill="${b}" stroke="none"/>`],
+['Dłoń pod pinem','Otwarta dłoń trzyma pin: „masz nas pod opieką”. Ciepły, opiekuńczy.',c=>`<path d="M12 12.5s-3.2-2.8-3.2-5.3a3.2 3.2 0 0 1 6.4 0c0 2.5-3.2 5.3-3.2 5.3z"/><circle cx="12" cy="7.2" r=".9"/><path d="M2.5 15.5h3l3.2 1.6h4.1a1.5 1.5 0 0 1 0 3H9.5"/><path d="M12.8 18.6l5.2-2.4a1.6 1.6 0 0 1 1.8 2.5L15 21.5H5.5"/>`],
+['Mapa z trasą','Złożona mapa z przerywaną trasą do celu. Czytelne „planujemy i pilnujemy drogi”.',c=>`<path d="M3 6.5 8.5 4l7 2.5L21 4v13.5L15.5 20l-7-2.5L3 20z"/><path d="M8.5 4v13.5M15.5 6.5V20" opacity=".45"/><path d="M5.5 15.5c2-.5 3-2 5-2.5s3 .5 5-1.5" stroke-dasharray="1.6 2"/><circle cx="17.6" cy="10.2" r="1.3" fill="${c}"/>`],
+['Pin z ptaszkiem','Pin z checkmarkiem: „dotarłeś bezpiecznie”. Mówi o efekcie, nie o patrzeniu.',c=>`<path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><path d="M9 10.2l2.1 2.1L15.2 8"/>`]
+]}
+];
+const svg=(f,s,c,b)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${f(c,b)}</svg>`;
+document.getElementById('w').innerHTML=G.map(g=>`<section class="g"><h2>${g.h}</h2><p class="s">${g.s}</p><div class="grid">${g.items.map((x,i)=>`<div class="opt${g.cur===i?' cur':''}" id="${g.id}${i+1}"><span class="n">${g.id}${i+1}</span>${g.cur===i?'<span class="tag">TERAZ W DS</span>':''}<div class="btn">${svg(x[2],44,'#fff','#4FA3F7')}<span>OBSERWACJA</span></div><div class="row"><div class="sm" style="background:var(--blue-action-100)">${svg(x[2],26,'#006DDB','#DCEDFF')}</div><div class="sm" style="background:var(--blue-800)">${svg(x[2],26,'#5BADFF','#0E1353')}</div>${svg(x[2],20,'#0E1353','#FFFFFF')}</div><div class="t">${x[0]}</div><p class="d">${x[1]}</p></div>`).join('')}</div></section>`).join('');
+</script>
+</body>
+</html>

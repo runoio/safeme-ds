@@ -1,8 +1,8 @@
 # Site sections → components
 
-Styled from the code in `trupek123/safeme-site` (synced 27.09.2026). Layout rules from the site: page max-width 1120px, section gap `--space-12`, cards `--radius-lg` + `--shadow-xs`, big panels `--radius-xl`.
+Styled from the code in `runoio/safeme-site` (synced 27.09.2026). Layout rules from the site: page max-width 1120px, section gap `--space-12`, cards `--radius-lg` + `--shadow-xs`, big panels `--radius-xl`.
 
-**Section order checked against live safeme.uk on 29.09.2026** (the order below follows the live site). Code source: repo `trupek123/safeme-site` main. PL and EN use the same page structure. Copy lives in `content-and-facts.md`; components in `components/sections/`.
+**Section order checked against live safeme.uk on 29.09.2026** (the order below follows the live site). Code source: repo `runoio/safeme-site` main. PL and EN use the same page structure. Copy lives in `content-and-facts.md`; components in `components/sections/`.
 
 ## Home (/)
 | Section | Components |

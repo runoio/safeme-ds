@@ -1,6 +1,6 @@
-repo: trupek123/safeme-ds
+repo: runoio/safeme-ds
 branch: main
-source: trupek123/safeme-site (app/)
+source: runoio/safeme-site (app/)
 
 ## Last sync
 date: 2026-09-29T11:04:35Z

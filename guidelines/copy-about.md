@@ -1,6 +1,6 @@
 # Copy — O aplikacji / About (verbatim)
 
-Extracted from `trupek123/safeme-site` main, `lib/i18n.ts` (28.09.2026). **Quote verbatim.** Section order matches the page (see `home-sections.md`). Omitted: meta, image paths, icons, prices (see `content-and-facts.md`).
+Extracted from `runoio/safeme-site` main, `lib/i18n.ts` (28.09.2026). **Quote verbatim.** Section order matches the page (see `home-sections.md`). Omitted: meta, image paths, icons, prices (see `content-and-facts.md`).
 
 ## PL — /o-aplikacji
 

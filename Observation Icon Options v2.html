@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="styles.css">
+<style>
+body{margin:0;font-family:var(--font-body)}
+a{color:var(--text-link)}a:hover{color:var(--blue-action-600)}
+.wrap{position:absolute;left:0;top:0;width:1100px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.opt{background:var(--surface-card);border-radius:24px;padding:28px 20px 22px;display:flex;flex-direction:column;align-items:center;gap:18px;box-shadow:var(--shadow-sm);position:relative}
+.n{position:absolute;top:14px;left:14px;font:700 13px/1 var(--font-head);color:#fff;background:var(--blue-800);border-radius:999px;padding:6px 10px}
+.btn{width:170px;height:170px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fff;background:radial-gradient(circle at 50% 38%,var(--blue-action-300) 0%,var(--blue-action-500) 55%,var(--blue-action-600) 100%);box-shadow:var(--shadow-observe)}
+.btn span{font:700 15px/1 var(--font-head);letter-spacing:.02em}
+.row{display:flex;gap:14px;align-items:center}
+.sm{width:56px;height:56px;border-radius:16px;display:grid;place-items:center}
+.t{font:700 15px/1.3 var(--font-head);color:var(--text-strong);text-align:center}
+.t{margin-bottom:-8px}.d{font-size:13px;line-height:1.45;color:var(--text-muted);text-align:center;margin:0;text-wrap:pretty}
+</style>
+</head>
+<body>
+<div class="wrap" id="w"></div>
+<script>
+const A='M6.9 9.7 13.1 6.9 10.3 13.1 9.7 10.3z';
+const A2='M10 6.6 12.5 13.4 10 12 7.5 13.4z';
+const I=[
+['Lupa + strzałka, liniowa','Soczewka r = 8 (było 7), strzałka nawigacji w środku jako kontur.',(c,b)=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="${A}"/>`],
+['Lupa + strzałka, wypełniona','Ta sama duża soczewka, strzałka pełna. Czytelna nawet w 18 px.',(c,b)=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="${A}" fill="${c}"/>`],
+['Lupa + strzałka w górę','Strzałka „przed siebie” (jak w nawigacji samochodowej), wypełniona.',(c,b)=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="${A2}" fill="${c}"/>`],
+['Maksymalna soczewka','Soczewka r = 9, krótka gruba rączka, większa strzałka. Najwięcej miejsca na strzałkę.',(c,b)=>`<circle cx="10.5" cy="10.5" r="9"/><path d="M17.2 17.2 22 22" stroke-width="3"/><path d="M6.9 10.2 14.3 6.9 11 14.3 10.3 11z" fill="${c}"/>`],
+['Pełna soczewka','Wypełnione koło, strzałka „wycięta” w kolorze tła. Najmocniejszy kontrast.',(c,b)=>`<circle cx="10" cy="10" r="8.5" fill="${c}"/><path d="M16.2 16.2 21.5 21.5" stroke-width="2.6"/><path d="${A}" fill="${b}" stroke="${b}" stroke-width="1.2"/>`],
+['Soczewka z kreskami ruchu','Duża soczewka, pełna strzałka i dwie krótkie kreski za nią: „w drodze”.',(c,b)=>`<circle cx="10" cy="10" r="8"/><path d="M15.8 15.8 21.5 21.5"/><path d="M8.2 9.5 13.3 7.2 11 12.3 10.5 10z" fill="${c}"/><path d="M5.6 11.6 7.4 10.8M6.6 13.6 8.4 12.8" stroke-width="1.6"/>`]
+];
+const svg=(f,s,c,b)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${f(c,b)}</svg>`;
+document.getElementById('w').innerHTML=I.map((x,i)=>`<div class="opt"><span class="n">${i+1}</span><div class="btn">${svg(x[2],48,'#fff','#4FA3F7')}<span>OBSERWACJA</span></div><div class="row"><div class="sm" style="background:var(--blue-action-100)">${svg(x[2],28,'#006DDB','#E6F2FF')}</div><div class="sm" style="background:var(--blue-800)">${svg(x[2],28,'#5BADFF','#0E1353')}</div>${svg(x[2],24,'#0E1353','#FFFFFF')}</div><div class="t">${x[0]}</div><p class="d">${x[1]}</p></div>`).join('');
+</script>
+</body>
+</html>
